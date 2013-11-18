@@ -1,0 +1,27 @@
+//
+//  YJView.h
+//  TestYJFramework
+//
+//  Created by szfore on 13-5-23.
+//  Copyright (c) 2013年 szfore. All rights reserved.
+//
+
+#define YJLAYOUT_CLASS @"class"
+
+
+#define YJLAYOUT_YJVIEW_FRAME @"frame"
+#define YJLAYOUT_YJVIEW_BACKGROUND_COLOR @"backgroundColor"
+#define YJLAYOUT_YJVIEW_TAG @"tag"
+
+
+#import <UIKit/UIKit.h>
+#import "YJViewDelegate.h"
+@interface YJView : UIView
+
+@end
+//  2013-07-10;
+@interface UIView (YJLayoutDelegate)<YJLayoutDelegate>
++(id)viewWithPlistFilePath:(NSString *)filePath;
++(id)viewWithLayoutDict:(NSDictionary *)dict;
+-(void)addSubViewFromLayoutArray:(NSArray*)plistPaths;
+@end

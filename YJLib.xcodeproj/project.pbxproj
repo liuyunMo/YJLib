@@ -1,0 +1,1454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B0B6B67180E328B00081484 /* TestYJTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0B6B65180E328B00081484 /* TestYJTestViewController.m */; };
+		3B0B6B68180E328B00081484 /* TestYJTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B0B6B66180E328B00081484 /* TestYJTestViewController.xib */; };
+		3B483316180BA9360013EFE8 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B483315180BA9360013EFE8 /* ListViewController.m */; };
+		3BD1BD1B1829D61F00B553C9 /* option_btn_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BD1BD191829D61F00B553C9 /* option_btn_default.png */; };
+		3BD1BD1C1829D61F00B553C9 /* option_btn_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BD1BD1A1829D61F00B553C9 /* option_btn_selected.png */; };
+		3BDC6F82182745C8006606BA /* TestYJTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC6F81182745C8006606BA /* TestYJTableViewViewController.m */; };
+		3BEECF86180B987A00CABE47 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEECF85180B987A00CABE47 /* libsqlite3.dylib */; };
+		3BEECF88180B988700CABE47 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEECF87180B988700CABE47 /* QuartzCore.framework */; };
+		3BEED1C3180B9ACC00CABE47 /* YJFlashImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED107180B9ACB00CABE47 /* YJFlashImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED1C4180B9ACC00CABE47 /* YJFlashImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED108180B9ACB00CABE47 /* YJFlashImageView.m */; };
+		3BEED1C5180B9ACC00CABE47 /* YJFlashImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED108180B9ACB00CABE47 /* YJFlashImageView.m */; };
+		3BEED1C6180B9ACC00CABE47 /* YJFlashImageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED109180B9ACB00CABE47 /* YJFlashImageViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED1C7180B9ACC00CABE47 /* YJFlashImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED10A180B9ACB00CABE47 /* YJFlashImageViewController.m */; };
+		3BEED1C8180B9ACC00CABE47 /* YJFlashImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED10A180B9ACB00CABE47 /* YJFlashImageViewController.m */; };
+		3BEED1C9180B9ACC00CABE47 /* Function.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED10C180B9ACB00CABE47 /* Function.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED1CA180B9ACC00CABE47 /* Function.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED10D180B9ACB00CABE47 /* Function.m */; };
+		3BEED1CB180B9ACC00CABE47 /* Function.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED10D180B9ACB00CABE47 /* Function.m */; };
+		3BEED1CC180B9ACC00CABE47 /* LoginPopedomManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED10E180B9ACB00CABE47 /* LoginPopedomManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED1CD180B9ACC00CABE47 /* LoginPopedomManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED10F180B9ACB00CABE47 /* LoginPopedomManager.m */; };
+		3BEED1CE180B9ACC00CABE47 /* LoginPopedomManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED10F180B9ACB00CABE47 /* LoginPopedomManager.m */; };
+		3BEED1CF180B9ACC00CABE47 /* YJIOSLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED110180B9ACB00CABE47 /* YJIOSLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED1D0180B9ACC00CABE47 /* YJIOSLibDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED111180B9ACB00CABE47 /* YJIOSLibDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED1D1180B9ACC00CABE47 /* YJMessageCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED112180B9ACB00CABE47 /* YJMessageCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED1D2180B9ACC00CABE47 /* YJMessageCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED113180B9ACB00CABE47 /* YJMessageCenter.m */; };
+		3BEED1D3180B9ACC00CABE47 /* YJMessageCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED113180B9ACB00CABE47 /* YJMessageCenter.m */; };
+		3BEED1D4180B9ACC00CABE47 /* YJPublic.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED114180B9ACB00CABE47 /* YJPublic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED1D5180B9ACC00CABE47 /* YJPublic.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED115180B9ACB00CABE47 /* YJPublic.m */; };
+		3BEED1D6180B9ACC00CABE47 /* YJPublic.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED115180B9ACB00CABE47 /* YJPublic.m */; };
+		3BEED1D7180B9ACC00CABE47 /* YJPublicPro.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED116180B9ACB00CABE47 /* YJPublicPro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED1D8180B9ACC00CABE47 /* YJPublicPro.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED117180B9ACB00CABE47 /* YJPublicPro.m */; };
+		3BEED1D9180B9ACC00CABE47 /* YJPublicPro.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED117180B9ACB00CABE47 /* YJPublicPro.m */; };
+		3BEED1DA180B9ACC00CABE47 /* YJTargetList.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED118180B9ACB00CABE47 /* YJTargetList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED1DB180B9ACC00CABE47 /* YJTargetList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED119180B9ACB00CABE47 /* YJTargetList.m */; };
+		3BEED1DC180B9ACC00CABE47 /* YJTargetList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED119180B9ACB00CABE47 /* YJTargetList.m */; };
+		3BEED1DD180B9ACC00CABE47 /* YJDatabase_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED11D180B9ACB00CABE47 /* YJDatabase_c.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED1DE180B9ACC00CABE47 /* YJDatabase_c.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED11E180B9ACB00CABE47 /* YJDatabase_c.m */; };
+		3BEED1DF180B9ACC00CABE47 /* YJDatabase_c.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED11E180B9ACB00CABE47 /* YJDatabase_c.m */; };
+		3BEED1E0180B9ACC00CABE47 /* YJDatabaseDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED11F180B9ACB00CABE47 /* YJDatabaseDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED1E1180B9ACC00CABE47 /* LYFileDownload.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED121180B9ACB00CABE47 /* LYFileDownload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED1E2180B9ACC00CABE47 /* LYFileDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED122180B9ACB00CABE47 /* LYFileDownload.m */; };
+		3BEED1E3180B9ACC00CABE47 /* LYFileDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED122180B9ACB00CABE47 /* LYFileDownload.m */; };
+		3BEED1E4180B9ACC00CABE47 /* NSArray+typeCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED123180B9ACB00CABE47 /* NSArray+typeCheck.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED1E5180B9ACC00CABE47 /* NSArray+typeCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED124180B9ACB00CABE47 /* NSArray+typeCheck.m */; };
+		3BEED1E6180B9ACC00CABE47 /* NSArray+typeCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED124180B9ACB00CABE47 /* NSArray+typeCheck.m */; };
+		3BEED1E7180B9ACC00CABE47 /* NSDictionary+typeCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED125180B9ACB00CABE47 /* NSDictionary+typeCheck.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED1E8180B9ACC00CABE47 /* NSDictionary+typeCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED126180B9ACB00CABE47 /* NSDictionary+typeCheck.m */; };
+		3BEED1E9180B9ACC00CABE47 /* NSDictionary+typeCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED126180B9ACB00CABE47 /* NSDictionary+typeCheck.m */; };
+		3BEED1EA180B9ACC00CABE47 /* YJChar.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED127180B9ACB00CABE47 /* YJChar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED1EB180B9ACC00CABE47 /* YJChar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED128180B9ACB00CABE47 /* YJChar.m */; };
+		3BEED1EC180B9ACC00CABE47 /* YJChar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED128180B9ACB00CABE47 /* YJChar.m */; };
+		3BEED1ED180B9ACC00CABE47 /* YJCrashRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED129180B9ACB00CABE47 /* YJCrashRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED1EE180B9ACC00CABE47 /* YJCrashRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED12A180B9ACB00CABE47 /* YJCrashRecorder.m */; };
+		3BEED1EF180B9ACC00CABE47 /* YJCrashRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED12A180B9ACB00CABE47 /* YJCrashRecorder.m */; };
+		3BEED1F0180B9ACC00CABE47 /* YJDataCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED12B180B9ACB00CABE47 /* YJDataCenter.h */; settings = {ATTRIBUTES = (); }; };
+		3BEED1F1180B9ACC00CABE47 /* YJDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED12C180B9ACB00CABE47 /* YJDataCenter.m */; };
+		3BEED1F2180B9ACC00CABE47 /* YJDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED12C180B9ACB00CABE47 /* YJDataCenter.m */; };
+		3BEED1F3180B9ACC00CABE47 /* YJEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED12D180B9ACB00CABE47 /* YJEncrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED1F4180B9ACC00CABE47 /* YJEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED12E180B9ACB00CABE47 /* YJEncrypt.m */; };
+		3BEED1F5180B9ACC00CABE47 /* YJEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED12E180B9ACB00CABE47 /* YJEncrypt.m */; };
+		3BEED1F6180B9ACC00CABE47 /* YJFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED12F180B9ACB00CABE47 /* YJFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED1F7180B9ACC00CABE47 /* YJFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED130180B9ACB00CABE47 /* YJFont.m */; };
+		3BEED1F8180B9ACC00CABE47 /* YJFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED130180B9ACB00CABE47 /* YJFont.m */; };
+		3BEED1F9180B9ACC00CABE47 /* YJString.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED131180B9ACB00CABE47 /* YJString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED1FA180B9ACC00CABE47 /* YJString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED132180B9ACB00CABE47 /* YJString.m */; };
+		3BEED1FB180B9ACC00CABE47 /* YJString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED132180B9ACB00CABE47 /* YJString.m */; };
+		3BEED1FC180B9ACC00CABE47 /* YJXMLParse.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED133180B9ACB00CABE47 /* YJXMLParse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED1FD180B9ACC00CABE47 /* YJXMLParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED134180B9ACB00CABE47 /* YJXMLParse.m */; };
+		3BEED1FE180B9ACC00CABE47 /* YJXMLParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED134180B9ACB00CABE47 /* YJXMLParse.m */; };
+		3BEED1FF180B9ACC00CABE47 /* YJFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED136180B9ACB00CABE47 /* YJFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED200180B9ACC00CABE47 /* YJFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED137180B9ACB00CABE47 /* YJFileManager.m */; };
+		3BEED201180B9ACC00CABE47 /* YJFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED137180B9ACB00CABE47 /* YJFileManager.m */; };
+		3BEED202180B9ACC00CABE47 /* YJFileManagerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED138180B9ACB00CABE47 /* YJFileManagerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED203180B9ACC00CABE47 /* YJFileManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED139180B9ACB00CABE47 /* YJFileManagerViewController.m */; };
+		3BEED204180B9ACC00CABE47 /* YJFileManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED139180B9ACB00CABE47 /* YJFileManagerViewController.m */; };
+		3BEED205180B9ACC00CABE47 /* YJScanViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED13A180B9ACB00CABE47 /* YJScanViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED206180B9ACC00CABE47 /* YJScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED13B180B9ACB00CABE47 /* YJScanViewController.m */; };
+		3BEED207180B9ACC00CABE47 /* YJScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED13B180B9ACB00CABE47 /* YJScanViewController.m */; };
+		3BEED208180B9ACC00CABE47 /* YJGraphicsModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED13D180B9ACB00CABE47 /* YJGraphicsModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED209180B9ACC00CABE47 /* YJGraphicsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED13E180B9ACB00CABE47 /* YJGraphicsModel.m */; };
+		3BEED20A180B9ACC00CABE47 /* YJGraphicsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED13E180B9ACB00CABE47 /* YJGraphicsModel.m */; };
+		3BEED20B180B9ACC00CABE47 /* YJPieChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED13F180B9ACB00CABE47 /* YJPieChartView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED20C180B9ACC00CABE47 /* YJPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED140180B9ACB00CABE47 /* YJPieChartView.m */; };
+		3BEED20D180B9ACC00CABE47 /* YJPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED140180B9ACB00CABE47 /* YJPieChartView.m */; };
+		3BEED20E180B9ACC00CABE47 /* YJImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED142180B9ACB00CABE47 /* YJImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED20F180B9ACC00CABE47 /* YJImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED143180B9ACB00CABE47 /* YJImageManager.m */; };
+		3BEED210180B9ACC00CABE47 /* YJImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED143180B9ACB00CABE47 /* YJImageManager.m */; };
+		3BEED211180B9ACC00CABE47 /* YJGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED145180B9ACB00CABE47 /* YJGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED212180B9ACC00CABE47 /* YJGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED146180B9ACB00CABE47 /* YJGradientLayer.m */; };
+		3BEED213180B9ACC00CABE47 /* YJGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED146180B9ACB00CABE47 /* YJGradientLayer.m */; };
+		3BEED214180B9ACC00CABE47 /* YJWindow.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BEED148180B9ACB00CABE47 /* YJWindow.plist */; };
+		3BEED215180B9ACC00CABE47 /* LYJsonCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED14A180B9ACB00CABE47 /* LYJsonCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED216180B9ACC00CABE47 /* LYJsonCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED14B180B9ACB00CABE47 /* LYJsonCode.m */; };
+		3BEED217180B9ACC00CABE47 /* LYJsonCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED14B180B9ACB00CABE47 /* LYJsonCode.m */; };
+		3BEED218180B9ACC00CABE47 /* SZNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED14C180B9ACB00CABE47 /* SZNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED219180B9ACC00CABE47 /* SZNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED14D180B9ACB00CABE47 /* SZNetwork.m */; };
+		3BEED21A180B9ACC00CABE47 /* SZNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED14D180B9ACB00CABE47 /* SZNetwork.m */; };
+		3BEED21B180B9ACC00CABE47 /* YJAnswerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED14F180B9ACB00CABE47 /* YJAnswerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED21C180B9ACC00CABE47 /* YJAnswerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED150180B9ACB00CABE47 /* YJAnswerView.m */; };
+		3BEED21D180B9ACC00CABE47 /* YJAnswerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED150180B9ACB00CABE47 /* YJAnswerView.m */; };
+		3BEED21E180B9ACC00CABE47 /* YJExamViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED151180B9ACB00CABE47 /* YJExamViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED21F180B9ACC00CABE47 /* YJExamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED152180B9ACB00CABE47 /* YJExamViewController.m */; };
+		3BEED220180B9ACC00CABE47 /* YJExamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED152180B9ACB00CABE47 /* YJExamViewController.m */; };
+		3BEED221180B9ACC00CABE47 /* YJOptionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED153180B9ACB00CABE47 /* YJOptionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED222180B9ACC00CABE47 /* YJOptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED154180B9ACB00CABE47 /* YJOptionView.m */; };
+		3BEED223180B9ACC00CABE47 /* YJOptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED154180B9ACB00CABE47 /* YJOptionView.m */; };
+		3BEED224180B9ACC00CABE47 /* YJQuestion.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED155180B9ACB00CABE47 /* YJQuestion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED225180B9ACC00CABE47 /* YJQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED156180B9ACB00CABE47 /* YJQuestion.m */; };
+		3BEED226180B9ACC00CABE47 /* YJQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED156180B9ACB00CABE47 /* YJQuestion.m */; };
+		3BEED227180B9ACC00CABE47 /* YJQuestionHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED157180B9ACB00CABE47 /* YJQuestionHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED228180B9ACC00CABE47 /* YJQuestionHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED158180B9ACB00CABE47 /* YJQuestionHandle.m */; };
+		3BEED229180B9ACC00CABE47 /* YJQuestionHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED158180B9ACB00CABE47 /* YJQuestionHandle.m */; };
+		3BEED22A180B9ACC00CABE47 /* YJQuestionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED159180B9ACB00CABE47 /* YJQuestionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED22B180B9ACC00CABE47 /* YJQuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED15A180B9ACB00CABE47 /* YJQuestionView.m */; };
+		3BEED22C180B9ACC00CABE47 /* YJQuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED15A180B9ACB00CABE47 /* YJQuestionView.m */; };
+		3BEED22D180B9ACC00CABE47 /* YJResultView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED15B180B9ACB00CABE47 /* YJResultView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED22E180B9ACC00CABE47 /* YJResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED15C180B9ACB00CABE47 /* YJResultView.m */; };
+		3BEED22F180B9ACC00CABE47 /* YJResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED15C180B9ACB00CABE47 /* YJResultView.m */; };
+		3BEED230180B9ACC00CABE47 /* YJResultViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED15D180B9ACC00CABE47 /* YJResultViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED231180B9ACC00CABE47 /* YJResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED15E180B9ACC00CABE47 /* YJResultViewController.m */; };
+		3BEED232180B9ACC00CABE47 /* YJResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED15E180B9ACC00CABE47 /* YJResultViewController.m */; };
+		3BEED233180B9ACC00CABE47 /* YJTestDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED15F180B9ACC00CABE47 /* YJTestDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED234180B9ACC00CABE47 /* YJTestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED160180B9ACC00CABE47 /* YJTestDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED235180B9ACC00CABE47 /* YJTestResultHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED161180B9ACC00CABE47 /* YJTestResultHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED236180B9ACC00CABE47 /* YJTestResultHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED162180B9ACC00CABE47 /* YJTestResultHandle.m */; };
+		3BEED237180B9ACC00CABE47 /* YJTestResultHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED162180B9ACC00CABE47 /* YJTestResultHandle.m */; };
+		3BEED238180B9ACC00CABE47 /* LYRoundProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED164180B9ACC00CABE47 /* LYRoundProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED239180B9ACC00CABE47 /* LYRoundProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED165180B9ACC00CABE47 /* LYRoundProgressView.m */; };
+		3BEED23A180B9ACC00CABE47 /* LYRoundProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED165180B9ACC00CABE47 /* LYRoundProgressView.m */; };
+		3BEED23B180B9ACC00CABE47 /* LYScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED166180B9ACC00CABE47 /* LYScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED23C180B9ACC00CABE47 /* LYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED167180B9ACC00CABE47 /* LYScrollView.m */; };
+		3BEED23D180B9ACC00CABE47 /* LYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED167180B9ACC00CABE47 /* LYScrollView.m */; };
+		3BEED23E180B9ACC00CABE47 /* QDAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED168180B9ACC00CABE47 /* QDAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED23F180B9ACC00CABE47 /* QDAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED169180B9ACC00CABE47 /* QDAlertView.m */; };
+		3BEED240180B9ACC00CABE47 /* QDAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED169180B9ACC00CABE47 /* QDAlertView.m */; };
+		3BEED241180B9ACC00CABE47 /* YJAlertInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED16A180B9ACC00CABE47 /* YJAlertInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED242180B9ACC00CABE47 /* YJAlertInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED16B180B9ACC00CABE47 /* YJAlertInputView.m */; };
+		3BEED243180B9ACC00CABE47 /* YJAlertInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED16B180B9ACC00CABE47 /* YJAlertInputView.m */; };
+		3BEED244180B9ACC00CABE47 /* YJBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED16C180B9ACC00CABE47 /* YJBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED245180B9ACC00CABE47 /* YJBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED16D180B9ACC00CABE47 /* YJBarItem.m */; };
+		3BEED246180B9ACC00CABE47 /* YJBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED16D180B9ACC00CABE47 /* YJBarItem.m */; };
+		3BEED247180B9ACC00CABE47 /* YJButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED16E180B9ACC00CABE47 /* YJButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED248180B9ACC00CABE47 /* YJButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED16F180B9ACC00CABE47 /* YJButton.m */; };
+		3BEED249180B9ACC00CABE47 /* YJButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED16F180B9ACC00CABE47 /* YJButton.m */; };
+		3BEED24A180B9ACC00CABE47 /* YJCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED170180B9ACC00CABE47 /* YJCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED24B180B9ACC00CABE47 /* YJCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED171180B9ACC00CABE47 /* YJCalendar.m */; };
+		3BEED24C180B9ACC00CABE47 /* YJCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED171180B9ACC00CABE47 /* YJCalendar.m */; };
+		3BEED24D180B9ACC00CABE47 /* YJCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED172180B9ACC00CABE47 /* YJCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED24E180B9ACC00CABE47 /* YJCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED173180B9ACC00CABE47 /* YJCalendarCell.m */; };
+		3BEED24F180B9ACC00CABE47 /* YJCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED173180B9ACC00CABE47 /* YJCalendarCell.m */; };
+		3BEED250180B9ACC00CABE47 /* YJCalendarTableItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED174180B9ACC00CABE47 /* YJCalendarTableItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED251180B9ACC00CABE47 /* YJCalendarTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED175180B9ACC00CABE47 /* YJCalendarTableItem.m */; };
+		3BEED252180B9ACC00CABE47 /* YJCalendarTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED175180B9ACC00CABE47 /* YJCalendarTableItem.m */; };
+		3BEED253180B9ACC00CABE47 /* YJCalendarTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED176180B9ACC00CABE47 /* YJCalendarTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED254180B9ACC00CABE47 /* YJCalendarTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED177180B9ACC00CABE47 /* YJCalendarTableView.m */; };
+		3BEED255180B9ACC00CABE47 /* YJCalendarTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED177180B9ACC00CABE47 /* YJCalendarTableView.m */; };
+		3BEED256180B9ACC00CABE47 /* YJCardCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED178180B9ACC00CABE47 /* YJCardCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED257180B9ACC00CABE47 /* YJCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED179180B9ACC00CABE47 /* YJCardCell.m */; };
+		3BEED258180B9ACC00CABE47 /* YJCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED179180B9ACC00CABE47 /* YJCardCell.m */; };
+		3BEED259180B9ACC00CABE47 /* YJCardView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED17A180B9ACC00CABE47 /* YJCardView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED25A180B9ACC00CABE47 /* YJCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED17B180B9ACC00CABE47 /* YJCardView.m */; };
+		3BEED25B180B9ACC00CABE47 /* YJCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED17B180B9ACC00CABE47 /* YJCardView.m */; };
+		3BEED25C180B9ACC00CABE47 /* YJClipView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED17C180B9ACC00CABE47 /* YJClipView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED25D180B9ACC00CABE47 /* YJClipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED17D180B9ACC00CABE47 /* YJClipView.m */; };
+		3BEED25E180B9ACC00CABE47 /* YJClipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED17D180B9ACC00CABE47 /* YJClipView.m */; };
+		3BEED25F180B9ACC00CABE47 /* YJContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED17E180B9ACC00CABE47 /* YJContentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED260180B9ACC00CABE47 /* YJContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED17F180B9ACC00CABE47 /* YJContentView.m */; };
+		3BEED261180B9ACC00CABE47 /* YJContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED17F180B9ACC00CABE47 /* YJContentView.m */; };
+		3BEED262180B9ACC00CABE47 /* YJDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED180180B9ACC00CABE47 /* YJDatePickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED263180B9ACC00CABE47 /* YJDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED181180B9ACC00CABE47 /* YJDatePickerView.m */; };
+		3BEED264180B9ACC00CABE47 /* YJDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED181180B9ACC00CABE47 /* YJDatePickerView.m */; };
+		3BEED265180B9ACC00CABE47 /* YJDrawView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED182180B9ACC00CABE47 /* YJDrawView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED266180B9ACC00CABE47 /* YJDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED183180B9ACC00CABE47 /* YJDrawView.m */; };
+		3BEED267180B9ACC00CABE47 /* YJDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED183180B9ACC00CABE47 /* YJDrawView.m */; };
+		3BEED268180B9ACC00CABE47 /* YJFileScanViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED184180B9ACC00CABE47 /* YJFileScanViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED269180B9ACC00CABE47 /* YJFileScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED185180B9ACC00CABE47 /* YJFileScanViewController.m */; };
+		3BEED26A180B9ACC00CABE47 /* YJFileScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED185180B9ACC00CABE47 /* YJFileScanViewController.m */; };
+		3BEED26B180B9ACC00CABE47 /* YJFlagView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED186180B9ACC00CABE47 /* YJFlagView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED26C180B9ACC00CABE47 /* YJFlagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED187180B9ACC00CABE47 /* YJFlagView.m */; };
+		3BEED26D180B9ACC00CABE47 /* YJFlagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED187180B9ACC00CABE47 /* YJFlagView.m */; };
+		3BEED26E180B9ACC00CABE47 /* YJGridView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED188180B9ACC00CABE47 /* YJGridView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED26F180B9ACC00CABE47 /* YJGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED189180B9ACC00CABE47 /* YJGridView.m */; };
+		3BEED270180B9ACC00CABE47 /* YJGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED189180B9ACC00CABE47 /* YJGridView.m */; };
+		3BEED271180B9ACC00CABE47 /* YJImageHandleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED18A180B9ACC00CABE47 /* YJImageHandleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED272180B9ACC00CABE47 /* YJImageHandleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED18B180B9ACC00CABE47 /* YJImageHandleView.m */; };
+		3BEED273180B9ACC00CABE47 /* YJImageHandleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED18B180B9ACC00CABE47 /* YJImageHandleView.m */; };
+		3BEED274180B9ACC00CABE47 /* YJImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED18C180B9ACC00CABE47 /* YJImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED275180B9ACC00CABE47 /* YJImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED18D180B9ACC00CABE47 /* YJImageView.m */; };
+		3BEED276180B9ACC00CABE47 /* YJImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED18D180B9ACC00CABE47 /* YJImageView.m */; };
+		3BEED277180B9ACC00CABE47 /* YJInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED18E180B9ACC00CABE47 /* YJInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED278180B9ACC00CABE47 /* YJInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED18F180B9ACC00CABE47 /* YJInputView.m */; };
+		3BEED279180B9ACC00CABE47 /* YJInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED18F180B9ACC00CABE47 /* YJInputView.m */; };
+		3BEED27A180B9ACC00CABE47 /* YJLayoutHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED190180B9ACC00CABE47 /* YJLayoutHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED27B180B9ACC00CABE47 /* YJLayoutHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED191180B9ACC00CABE47 /* YJLayoutHandle.m */; };
+		3BEED27C180B9ACC00CABE47 /* YJLayoutHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED191180B9ACC00CABE47 /* YJLayoutHandle.m */; };
+		3BEED27D180B9ACC00CABE47 /* YJLoadImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED192180B9ACC00CABE47 /* YJLoadImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED27E180B9ACC00CABE47 /* YJLoadImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED193180B9ACC00CABE47 /* YJLoadImageView.m */; };
+		3BEED27F180B9ACC00CABE47 /* YJLoadImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED193180B9ACC00CABE47 /* YJLoadImageView.m */; };
+		3BEED280180B9ACC00CABE47 /* YJLoginView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED194180B9ACC00CABE47 /* YJLoginView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED281180B9ACC00CABE47 /* YJLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED195180B9ACC00CABE47 /* YJLoginView.m */; };
+		3BEED282180B9ACC00CABE47 /* YJLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED195180B9ACC00CABE47 /* YJLoginView.m */; };
+		3BEED283180B9ACC00CABE47 /* YJMainView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED196180B9ACC00CABE47 /* YJMainView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED284180B9ACC00CABE47 /* YJMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED197180B9ACC00CABE47 /* YJMainView.m */; };
+		3BEED285180B9ACC00CABE47 /* YJMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED197180B9ACC00CABE47 /* YJMainView.m */; };
+		3BEED286180B9ACC00CABE47 /* YJMainViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED198180B9ACC00CABE47 /* YJMainViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED287180B9ACC00CABE47 /* YJMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED199180B9ACC00CABE47 /* YJMainViewController.m */; };
+		3BEED288180B9ACC00CABE47 /* YJMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED199180B9ACC00CABE47 /* YJMainViewController.m */; };
+		3BEED289180B9ACC00CABE47 /* YJNavBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED19A180B9ACC00CABE47 /* YJNavBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED28A180B9ACC00CABE47 /* YJNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED19B180B9ACC00CABE47 /* YJNavBar.m */; };
+		3BEED28B180B9ACC00CABE47 /* YJNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED19B180B9ACC00CABE47 /* YJNavBar.m */; };
+		3BEED28C180B9ACC00CABE47 /* YJNavViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED19C180B9ACC00CABE47 /* YJNavViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED28D180B9ACC00CABE47 /* YJNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED19D180B9ACC00CABE47 /* YJNavViewController.m */; };
+		3BEED28E180B9ACC00CABE47 /* YJNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED19D180B9ACC00CABE47 /* YJNavViewController.m */; };
+		3BEED28F180B9ACC00CABE47 /* YJProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED19E180B9ACC00CABE47 /* YJProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED290180B9ACC00CABE47 /* YJProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED19F180B9ACC00CABE47 /* YJProgressView.m */; };
+		3BEED291180B9ACC00CABE47 /* YJProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED19F180B9ACC00CABE47 /* YJProgressView.m */; };
+		3BEED292180B9ACC00CABE47 /* YJQuartz2DFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED1A0180B9ACC00CABE47 /* YJQuartz2DFunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED293180B9ACC00CABE47 /* YJQuartz2DFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1A1180B9ACC00CABE47 /* YJQuartz2DFunction.m */; };
+		3BEED294180B9ACC00CABE47 /* YJQuartz2DFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1A1180B9ACC00CABE47 /* YJQuartz2DFunction.m */; };
+		3BEED295180B9ACC00CABE47 /* YJSearchBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED1A2180B9ACC00CABE47 /* YJSearchBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED296180B9ACC00CABE47 /* YJSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1A3180B9ACC00CABE47 /* YJSearchBar.m */; };
+		3BEED297180B9ACC00CABE47 /* YJSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1A3180B9ACC00CABE47 /* YJSearchBar.m */; };
+		3BEED298180B9ACD00CABE47 /* YJSearchShowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED1A4180B9ACC00CABE47 /* YJSearchShowView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED299180B9ACD00CABE47 /* YJSearchShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1A5180B9ACC00CABE47 /* YJSearchShowView.m */; };
+		3BEED29A180B9ACD00CABE47 /* YJSearchShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1A5180B9ACC00CABE47 /* YJSearchShowView.m */; };
+		3BEED29B180B9ACD00CABE47 /* YJSearchView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED1A6180B9ACC00CABE47 /* YJSearchView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED29C180B9ACD00CABE47 /* YJSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1A7180B9ACC00CABE47 /* YJSearchView.m */; };
+		3BEED29D180B9ACD00CABE47 /* YJSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1A7180B9ACC00CABE47 /* YJSearchView.m */; };
+		3BEED29E180B9ACD00CABE47 /* YJSegmentControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED1A8180B9ACC00CABE47 /* YJSegmentControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED29F180B9ACD00CABE47 /* YJSegmentControl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1A9180B9ACC00CABE47 /* YJSegmentControl.mm */; };
+		3BEED2A0180B9ACD00CABE47 /* YJSegmentControl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1A9180B9ACC00CABE47 /* YJSegmentControl.mm */; };
+		3BEED2A1180B9ACD00CABE47 /* YJSelectView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED1AA180B9ACC00CABE47 /* YJSelectView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED2A2180B9ACD00CABE47 /* YJSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1AB180B9ACC00CABE47 /* YJSelectView.m */; };
+		3BEED2A3180B9ACD00CABE47 /* YJSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1AB180B9ACC00CABE47 /* YJSelectView.m */; };
+		3BEED2A4180B9ACD00CABE47 /* YJStatusImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED1AC180B9ACC00CABE47 /* YJStatusImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED2A5180B9ACD00CABE47 /* YJStatusImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1AD180B9ACC00CABE47 /* YJStatusImage.m */; };
+		3BEED2A6180B9ACD00CABE47 /* YJStatusImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1AD180B9ACC00CABE47 /* YJStatusImage.m */; };
+		3BEED2A7180B9ACD00CABE47 /* YJStayButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED1AE180B9ACC00CABE47 /* YJStayButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED2A8180B9ACD00CABE47 /* YJStayButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1AF180B9ACC00CABE47 /* YJStayButton.m */; };
+		3BEED2A9180B9ACD00CABE47 /* YJStayButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1AF180B9ACC00CABE47 /* YJStayButton.m */; };
+		3BEED2AA180B9ACD00CABE47 /* YJTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED1B0180B9ACC00CABE47 /* YJTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED2AB180B9ACD00CABE47 /* YJTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1B1180B9ACC00CABE47 /* YJTabBar.m */; };
+		3BEED2AC180B9ACD00CABE47 /* YJTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1B1180B9ACC00CABE47 /* YJTabBar.m */; };
+		3BEED2AD180B9ACD00CABE47 /* YJTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED1B2180B9ACC00CABE47 /* YJTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED2AE180B9ACD00CABE47 /* YJTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1B3180B9ACC00CABE47 /* YJTableView.m */; };
+		3BEED2AF180B9ACD00CABE47 /* YJTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1B3180B9ACC00CABE47 /* YJTableView.m */; };
+		3BEED2B0180B9ACD00CABE47 /* YJTextFiled.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED1B4180B9ACC00CABE47 /* YJTextFiled.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED2B1180B9ACD00CABE47 /* YJTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1B5180B9ACC00CABE47 /* YJTextFiled.m */; };
+		3BEED2B2180B9ACD00CABE47 /* YJTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1B5180B9ACC00CABE47 /* YJTextFiled.m */; };
+		3BEED2B3180B9ACD00CABE47 /* YJTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED1B6180B9ACC00CABE47 /* YJTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED2B4180B9ACD00CABE47 /* YJTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1B7180B9ACC00CABE47 /* YJTextView.m */; };
+		3BEED2B5180B9ACD00CABE47 /* YJTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1B7180B9ACC00CABE47 /* YJTextView.m */; };
+		3BEED2B6180B9ACD00CABE47 /* YJToolBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED1B8180B9ACC00CABE47 /* YJToolBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED2B7180B9ACD00CABE47 /* YJToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1B9180B9ACC00CABE47 /* YJToolBar.m */; };
+		3BEED2B8180B9ACD00CABE47 /* YJToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1B9180B9ACC00CABE47 /* YJToolBar.m */; };
+		3BEED2B9180B9ACD00CABE47 /* YJTouchView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED1BA180B9ACC00CABE47 /* YJTouchView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED2BA180B9ACD00CABE47 /* YJTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1BB180B9ACC00CABE47 /* YJTouchView.m */; };
+		3BEED2BB180B9ACD00CABE47 /* YJTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1BB180B9ACC00CABE47 /* YJTouchView.m */; };
+		3BEED2BC180B9ACD00CABE47 /* YJView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED1BC180B9ACC00CABE47 /* YJView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED2BD180B9ACD00CABE47 /* YJView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1BD180B9ACC00CABE47 /* YJView.m */; };
+		3BEED2BE180B9ACD00CABE47 /* YJView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1BD180B9ACC00CABE47 /* YJView.m */; };
+		3BEED2BF180B9ACD00CABE47 /* YJViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED1BE180B9ACC00CABE47 /* YJViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED2C0180B9ACD00CABE47 /* YJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1BF180B9ACC00CABE47 /* YJViewController.m */; };
+		3BEED2C1180B9ACD00CABE47 /* YJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1BF180B9ACC00CABE47 /* YJViewController.m */; };
+		3BEED2C2180B9ACD00CABE47 /* YJViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED1C0180B9ACC00CABE47 /* YJViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED2C3180B9ACD00CABE47 /* YJWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEED1C1180B9ACC00CABE47 /* YJWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEED2C4180B9ACD00CABE47 /* YJWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1C2180B9ACC00CABE47 /* YJWindow.m */; };
+		3BEED2C5180B9ACD00CABE47 /* YJWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEED1C2180B9ACC00CABE47 /* YJWindow.m */; };
+		3BF2365C1809244800B311FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF2365B1809244800B311FE /* UIKit.framework */; };
+		3BF2365E1809244800B311FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF2365D1809244800B311FE /* Foundation.framework */; };
+		3BF236601809244800B311FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF2365F1809244800B311FE /* CoreGraphics.framework */; };
+		3BF236661809244800B311FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BF236641809244800B311FE /* InfoPlist.strings */; };
+		3BF236681809244800B311FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF236671809244800B311FE /* main.m */; };
+		3BF2366C1809244800B311FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2366B1809244800B311FE /* AppDelegate.m */; };
+		3BF2366E1809244800B311FE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BF2366D1809244800B311FE /* Default.png */; };
+		3BF236701809244800B311FE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BF2366F1809244800B311FE /* Default@2x.png */; };
+		3BF236721809244800B311FE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BF236711809244800B311FE /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3BEECF8C180B993500CABE47 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3B0B6B64180E328B00081484 /* TestYJTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestYJTestViewController.h; path = Src/TestYJTestViewController.h; sourceTree = "<group>"; };
+		3B0B6B65180E328B00081484 /* TestYJTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestYJTestViewController.m; path = Src/TestYJTestViewController.m; sourceTree = "<group>"; };
+		3B0B6B66180E328B00081484 /* TestYJTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestYJTestViewController.xib; path = Src/TestYJTestViewController.xib; sourceTree = "<group>"; };
+		3B0B6BA0180E7E2200081484 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3B483314180BA9360013EFE8 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListViewController.h; path = Src/ListViewController.h; sourceTree = "<group>"; };
+		3B483315180BA9360013EFE8 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListViewController.m; path = Src/ListViewController.m; sourceTree = "<group>"; };
+		3BD1BD191829D61F00B553C9 /* option_btn_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = option_btn_default.png; sourceTree = "<group>"; };
+		3BD1BD1A1829D61F00B553C9 /* option_btn_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = option_btn_selected.png; sourceTree = "<group>"; };
+		3BDC6F80182745C8006606BA /* TestYJTableViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestYJTableViewViewController.h; path = Src/TestYJTableViewViewController.h; sourceTree = "<group>"; };
+		3BDC6F81182745C8006606BA /* TestYJTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestYJTableViewViewController.m; path = Src/TestYJTableViewViewController.m; sourceTree = "<group>"; };
+		3BEECF85180B987A00CABE47 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		3BEECF87180B988700CABE47 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3BEECF8E180B993500CABE47 /* libYJIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYJIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BEECF92180B993500CABE47 /* YJIOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YJIOS-Prefix.pch"; sourceTree = "<group>"; };
+		3BEED107180B9ACB00CABE47 /* YJFlashImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJFlashImageView.h; sourceTree = "<group>"; };
+		3BEED108180B9ACB00CABE47 /* YJFlashImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJFlashImageView.m; sourceTree = "<group>"; };
+		3BEED109180B9ACB00CABE47 /* YJFlashImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJFlashImageViewController.h; sourceTree = "<group>"; };
+		3BEED10A180B9ACB00CABE47 /* YJFlashImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJFlashImageViewController.m; sourceTree = "<group>"; };
+		3BEED10C180B9ACB00CABE47 /* Function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Function.h; sourceTree = "<group>"; };
+		3BEED10D180B9ACB00CABE47 /* Function.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Function.m; sourceTree = "<group>"; };
+		3BEED10E180B9ACB00CABE47 /* LoginPopedomManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginPopedomManager.h; sourceTree = "<group>"; };
+		3BEED10F180B9ACB00CABE47 /* LoginPopedomManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginPopedomManager.m; sourceTree = "<group>"; };
+		3BEED110180B9ACB00CABE47 /* YJIOSLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJIOSLib.h; sourceTree = "<group>"; };
+		3BEED111180B9ACB00CABE47 /* YJIOSLibDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJIOSLibDefine.h; sourceTree = "<group>"; };
+		3BEED112180B9ACB00CABE47 /* YJMessageCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJMessageCenter.h; sourceTree = "<group>"; };
+		3BEED113180B9ACB00CABE47 /* YJMessageCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJMessageCenter.m; sourceTree = "<group>"; };
+		3BEED114180B9ACB00CABE47 /* YJPublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJPublic.h; sourceTree = "<group>"; };
+		3BEED115180B9ACB00CABE47 /* YJPublic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJPublic.m; sourceTree = "<group>"; };
+		3BEED116180B9ACB00CABE47 /* YJPublicPro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJPublicPro.h; sourceTree = "<group>"; };
+		3BEED117180B9ACB00CABE47 /* YJPublicPro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJPublicPro.m; sourceTree = "<group>"; };
+		3BEED118180B9ACB00CABE47 /* YJTargetList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTargetList.h; sourceTree = "<group>"; };
+		3BEED119180B9ACB00CABE47 /* YJTargetList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTargetList.m; sourceTree = "<group>"; };
+		3BEED11D180B9ACB00CABE47 /* YJDatabase_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJDatabase_c.h; sourceTree = "<group>"; };
+		3BEED11E180B9ACB00CABE47 /* YJDatabase_c.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJDatabase_c.m; sourceTree = "<group>"; };
+		3BEED11F180B9ACB00CABE47 /* YJDatabaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJDatabaseDefine.h; sourceTree = "<group>"; };
+		3BEED121180B9ACB00CABE47 /* LYFileDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYFileDownload.h; sourceTree = "<group>"; };
+		3BEED122180B9ACB00CABE47 /* LYFileDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYFileDownload.m; sourceTree = "<group>"; };
+		3BEED123180B9ACB00CABE47 /* NSArray+typeCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+typeCheck.h"; sourceTree = "<group>"; };
+		3BEED124180B9ACB00CABE47 /* NSArray+typeCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+typeCheck.m"; sourceTree = "<group>"; };
+		3BEED125180B9ACB00CABE47 /* NSDictionary+typeCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+typeCheck.h"; sourceTree = "<group>"; };
+		3BEED126180B9ACB00CABE47 /* NSDictionary+typeCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+typeCheck.m"; sourceTree = "<group>"; };
+		3BEED127180B9ACB00CABE47 /* YJChar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJChar.h; sourceTree = "<group>"; };
+		3BEED128180B9ACB00CABE47 /* YJChar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJChar.m; sourceTree = "<group>"; };
+		3BEED129180B9ACB00CABE47 /* YJCrashRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJCrashRecorder.h; sourceTree = "<group>"; };
+		3BEED12A180B9ACB00CABE47 /* YJCrashRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJCrashRecorder.m; sourceTree = "<group>"; };
+		3BEED12B180B9ACB00CABE47 /* YJDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJDataCenter.h; sourceTree = "<group>"; };
+		3BEED12C180B9ACB00CABE47 /* YJDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJDataCenter.m; sourceTree = "<group>"; };
+		3BEED12D180B9ACB00CABE47 /* YJEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJEncrypt.h; sourceTree = "<group>"; };
+		3BEED12E180B9ACB00CABE47 /* YJEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJEncrypt.m; sourceTree = "<group>"; };
+		3BEED12F180B9ACB00CABE47 /* YJFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJFont.h; sourceTree = "<group>"; };
+		3BEED130180B9ACB00CABE47 /* YJFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJFont.m; sourceTree = "<group>"; };
+		3BEED131180B9ACB00CABE47 /* YJString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJString.h; sourceTree = "<group>"; };
+		3BEED132180B9ACB00CABE47 /* YJString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJString.m; sourceTree = "<group>"; };
+		3BEED133180B9ACB00CABE47 /* YJXMLParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJXMLParse.h; sourceTree = "<group>"; };
+		3BEED134180B9ACB00CABE47 /* YJXMLParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJXMLParse.m; sourceTree = "<group>"; };
+		3BEED136180B9ACB00CABE47 /* YJFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJFileManager.h; sourceTree = "<group>"; };
+		3BEED137180B9ACB00CABE47 /* YJFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJFileManager.m; sourceTree = "<group>"; };
+		3BEED138180B9ACB00CABE47 /* YJFileManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJFileManagerViewController.h; sourceTree = "<group>"; };
+		3BEED139180B9ACB00CABE47 /* YJFileManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJFileManagerViewController.m; sourceTree = "<group>"; };
+		3BEED13A180B9ACB00CABE47 /* YJScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJScanViewController.h; sourceTree = "<group>"; };
+		3BEED13B180B9ACB00CABE47 /* YJScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJScanViewController.m; sourceTree = "<group>"; };
+		3BEED13D180B9ACB00CABE47 /* YJGraphicsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJGraphicsModel.h; sourceTree = "<group>"; };
+		3BEED13E180B9ACB00CABE47 /* YJGraphicsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJGraphicsModel.m; sourceTree = "<group>"; };
+		3BEED13F180B9ACB00CABE47 /* YJPieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJPieChartView.h; sourceTree = "<group>"; };
+		3BEED140180B9ACB00CABE47 /* YJPieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJPieChartView.m; sourceTree = "<group>"; };
+		3BEED142180B9ACB00CABE47 /* YJImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJImageManager.h; sourceTree = "<group>"; };
+		3BEED143180B9ACB00CABE47 /* YJImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJImageManager.m; sourceTree = "<group>"; };
+		3BEED145180B9ACB00CABE47 /* YJGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJGradientLayer.h; sourceTree = "<group>"; };
+		3BEED146180B9ACB00CABE47 /* YJGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJGradientLayer.m; sourceTree = "<group>"; };
+		3BEED148180B9ACB00CABE47 /* YJWindow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YJWindow.plist; sourceTree = "<group>"; };
+		3BEED14A180B9ACB00CABE47 /* LYJsonCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYJsonCode.h; sourceTree = "<group>"; };
+		3BEED14B180B9ACB00CABE47 /* LYJsonCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYJsonCode.m; sourceTree = "<group>"; };
+		3BEED14C180B9ACB00CABE47 /* SZNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZNetwork.h; sourceTree = "<group>"; };
+		3BEED14D180B9ACB00CABE47 /* SZNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZNetwork.m; sourceTree = "<group>"; };
+		3BEED14F180B9ACB00CABE47 /* YJAnswerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJAnswerView.h; sourceTree = "<group>"; };
+		3BEED150180B9ACB00CABE47 /* YJAnswerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJAnswerView.m; sourceTree = "<group>"; };
+		3BEED151180B9ACB00CABE47 /* YJExamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJExamViewController.h; sourceTree = "<group>"; };
+		3BEED152180B9ACB00CABE47 /* YJExamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJExamViewController.m; sourceTree = "<group>"; };
+		3BEED153180B9ACB00CABE47 /* YJOptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJOptionView.h; sourceTree = "<group>"; };
+		3BEED154180B9ACB00CABE47 /* YJOptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJOptionView.m; sourceTree = "<group>"; };
+		3BEED155180B9ACB00CABE47 /* YJQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJQuestion.h; sourceTree = "<group>"; };
+		3BEED156180B9ACB00CABE47 /* YJQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJQuestion.m; sourceTree = "<group>"; };
+		3BEED157180B9ACB00CABE47 /* YJQuestionHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJQuestionHandle.h; sourceTree = "<group>"; };
+		3BEED158180B9ACB00CABE47 /* YJQuestionHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJQuestionHandle.m; sourceTree = "<group>"; };
+		3BEED159180B9ACB00CABE47 /* YJQuestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJQuestionView.h; sourceTree = "<group>"; };
+		3BEED15A180B9ACB00CABE47 /* YJQuestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJQuestionView.m; sourceTree = "<group>"; };
+		3BEED15B180B9ACB00CABE47 /* YJResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJResultView.h; sourceTree = "<group>"; };
+		3BEED15C180B9ACB00CABE47 /* YJResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJResultView.m; sourceTree = "<group>"; };
+		3BEED15D180B9ACC00CABE47 /* YJResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJResultViewController.h; sourceTree = "<group>"; };
+		3BEED15E180B9ACC00CABE47 /* YJResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJResultViewController.m; sourceTree = "<group>"; };
+		3BEED15F180B9ACC00CABE47 /* YJTestDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTestDefine.h; sourceTree = "<group>"; };
+		3BEED160180B9ACC00CABE47 /* YJTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTestDelegate.h; sourceTree = "<group>"; };
+		3BEED161180B9ACC00CABE47 /* YJTestResultHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTestResultHandle.h; sourceTree = "<group>"; };
+		3BEED162180B9ACC00CABE47 /* YJTestResultHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTestResultHandle.m; sourceTree = "<group>"; };
+		3BEED164180B9ACC00CABE47 /* LYRoundProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYRoundProgressView.h; sourceTree = "<group>"; };
+		3BEED165180B9ACC00CABE47 /* LYRoundProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYRoundProgressView.m; sourceTree = "<group>"; };
+		3BEED166180B9ACC00CABE47 /* LYScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYScrollView.h; sourceTree = "<group>"; };
+		3BEED167180B9ACC00CABE47 /* LYScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYScrollView.m; sourceTree = "<group>"; };
+		3BEED168180B9ACC00CABE47 /* QDAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDAlertView.h; sourceTree = "<group>"; };
+		3BEED169180B9ACC00CABE47 /* QDAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDAlertView.m; sourceTree = "<group>"; };
+		3BEED16A180B9ACC00CABE47 /* YJAlertInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJAlertInputView.h; sourceTree = "<group>"; };
+		3BEED16B180B9ACC00CABE47 /* YJAlertInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJAlertInputView.m; sourceTree = "<group>"; };
+		3BEED16C180B9ACC00CABE47 /* YJBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJBarItem.h; sourceTree = "<group>"; };
+		3BEED16D180B9ACC00CABE47 /* YJBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJBarItem.m; sourceTree = "<group>"; };
+		3BEED16E180B9ACC00CABE47 /* YJButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJButton.h; sourceTree = "<group>"; };
+		3BEED16F180B9ACC00CABE47 /* YJButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJButton.m; sourceTree = "<group>"; };
+		3BEED170180B9ACC00CABE47 /* YJCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJCalendar.h; sourceTree = "<group>"; };
+		3BEED171180B9ACC00CABE47 /* YJCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJCalendar.m; sourceTree = "<group>"; };
+		3BEED172180B9ACC00CABE47 /* YJCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJCalendarCell.h; sourceTree = "<group>"; };
+		3BEED173180B9ACC00CABE47 /* YJCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJCalendarCell.m; sourceTree = "<group>"; };
+		3BEED174180B9ACC00CABE47 /* YJCalendarTableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJCalendarTableItem.h; sourceTree = "<group>"; };
+		3BEED175180B9ACC00CABE47 /* YJCalendarTableItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJCalendarTableItem.m; sourceTree = "<group>"; };
+		3BEED176180B9ACC00CABE47 /* YJCalendarTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJCalendarTableView.h; sourceTree = "<group>"; };
+		3BEED177180B9ACC00CABE47 /* YJCalendarTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJCalendarTableView.m; sourceTree = "<group>"; };
+		3BEED178180B9ACC00CABE47 /* YJCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJCardCell.h; sourceTree = "<group>"; };
+		3BEED179180B9ACC00CABE47 /* YJCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJCardCell.m; sourceTree = "<group>"; };
+		3BEED17A180B9ACC00CABE47 /* YJCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJCardView.h; sourceTree = "<group>"; };
+		3BEED17B180B9ACC00CABE47 /* YJCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJCardView.m; sourceTree = "<group>"; };
+		3BEED17C180B9ACC00CABE47 /* YJClipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJClipView.h; sourceTree = "<group>"; };
+		3BEED17D180B9ACC00CABE47 /* YJClipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJClipView.m; sourceTree = "<group>"; };
+		3BEED17E180B9ACC00CABE47 /* YJContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJContentView.h; sourceTree = "<group>"; };
+		3BEED17F180B9ACC00CABE47 /* YJContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJContentView.m; sourceTree = "<group>"; };
+		3BEED180180B9ACC00CABE47 /* YJDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJDatePickerView.h; sourceTree = "<group>"; };
+		3BEED181180B9ACC00CABE47 /* YJDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJDatePickerView.m; sourceTree = "<group>"; };
+		3BEED182180B9ACC00CABE47 /* YJDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJDrawView.h; sourceTree = "<group>"; };
+		3BEED183180B9ACC00CABE47 /* YJDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJDrawView.m; sourceTree = "<group>"; };
+		3BEED184180B9ACC00CABE47 /* YJFileScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJFileScanViewController.h; sourceTree = "<group>"; };
+		3BEED185180B9ACC00CABE47 /* YJFileScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJFileScanViewController.m; sourceTree = "<group>"; };
+		3BEED186180B9ACC00CABE47 /* YJFlagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJFlagView.h; sourceTree = "<group>"; };
+		3BEED187180B9ACC00CABE47 /* YJFlagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJFlagView.m; sourceTree = "<group>"; };
+		3BEED188180B9ACC00CABE47 /* YJGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJGridView.h; sourceTree = "<group>"; };
+		3BEED189180B9ACC00CABE47 /* YJGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJGridView.m; sourceTree = "<group>"; };
+		3BEED18A180B9ACC00CABE47 /* YJImageHandleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJImageHandleView.h; sourceTree = "<group>"; };
+		3BEED18B180B9ACC00CABE47 /* YJImageHandleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJImageHandleView.m; sourceTree = "<group>"; };
+		3BEED18C180B9ACC00CABE47 /* YJImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJImageView.h; sourceTree = "<group>"; };
+		3BEED18D180B9ACC00CABE47 /* YJImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJImageView.m; sourceTree = "<group>"; };
+		3BEED18E180B9ACC00CABE47 /* YJInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJInputView.h; sourceTree = "<group>"; };
+		3BEED18F180B9ACC00CABE47 /* YJInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJInputView.m; sourceTree = "<group>"; };
+		3BEED190180B9ACC00CABE47 /* YJLayoutHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJLayoutHandle.h; sourceTree = "<group>"; };
+		3BEED191180B9ACC00CABE47 /* YJLayoutHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJLayoutHandle.m; sourceTree = "<group>"; };
+		3BEED192180B9ACC00CABE47 /* YJLoadImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJLoadImageView.h; sourceTree = "<group>"; };
+		3BEED193180B9ACC00CABE47 /* YJLoadImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJLoadImageView.m; sourceTree = "<group>"; };
+		3BEED194180B9ACC00CABE47 /* YJLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJLoginView.h; sourceTree = "<group>"; };
+		3BEED195180B9ACC00CABE47 /* YJLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJLoginView.m; sourceTree = "<group>"; };
+		3BEED196180B9ACC00CABE47 /* YJMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJMainView.h; sourceTree = "<group>"; };
+		3BEED197180B9ACC00CABE47 /* YJMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJMainView.m; sourceTree = "<group>"; };
+		3BEED198180B9ACC00CABE47 /* YJMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJMainViewController.h; sourceTree = "<group>"; };
+		3BEED199180B9ACC00CABE47 /* YJMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJMainViewController.m; sourceTree = "<group>"; };
+		3BEED19A180B9ACC00CABE47 /* YJNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJNavBar.h; sourceTree = "<group>"; };
+		3BEED19B180B9ACC00CABE47 /* YJNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJNavBar.m; sourceTree = "<group>"; };
+		3BEED19C180B9ACC00CABE47 /* YJNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJNavViewController.h; sourceTree = "<group>"; };
+		3BEED19D180B9ACC00CABE47 /* YJNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJNavViewController.m; sourceTree = "<group>"; };
+		3BEED19E180B9ACC00CABE47 /* YJProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJProgressView.h; sourceTree = "<group>"; };
+		3BEED19F180B9ACC00CABE47 /* YJProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJProgressView.m; sourceTree = "<group>"; };
+		3BEED1A0180B9ACC00CABE47 /* YJQuartz2DFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJQuartz2DFunction.h; sourceTree = "<group>"; };
+		3BEED1A1180B9ACC00CABE47 /* YJQuartz2DFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJQuartz2DFunction.m; sourceTree = "<group>"; };
+		3BEED1A2180B9ACC00CABE47 /* YJSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSearchBar.h; sourceTree = "<group>"; };
+		3BEED1A3180B9ACC00CABE47 /* YJSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJSearchBar.m; sourceTree = "<group>"; };
+		3BEED1A4180B9ACC00CABE47 /* YJSearchShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSearchShowView.h; sourceTree = "<group>"; };
+		3BEED1A5180B9ACC00CABE47 /* YJSearchShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJSearchShowView.m; sourceTree = "<group>"; };
+		3BEED1A6180B9ACC00CABE47 /* YJSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSearchView.h; sourceTree = "<group>"; };
+		3BEED1A7180B9ACC00CABE47 /* YJSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJSearchView.m; sourceTree = "<group>"; };
+		3BEED1A8180B9ACC00CABE47 /* YJSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSegmentControl.h; sourceTree = "<group>"; };
+		3BEED1A9180B9ACC00CABE47 /* YJSegmentControl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YJSegmentControl.mm; sourceTree = "<group>"; };
+		3BEED1AA180B9ACC00CABE47 /* YJSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSelectView.h; sourceTree = "<group>"; };
+		3BEED1AB180B9ACC00CABE47 /* YJSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJSelectView.m; sourceTree = "<group>"; };
+		3BEED1AC180B9ACC00CABE47 /* YJStatusImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJStatusImage.h; sourceTree = "<group>"; };
+		3BEED1AD180B9ACC00CABE47 /* YJStatusImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJStatusImage.m; sourceTree = "<group>"; };
+		3BEED1AE180B9ACC00CABE47 /* YJStayButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJStayButton.h; sourceTree = "<group>"; };
+		3BEED1AF180B9ACC00CABE47 /* YJStayButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJStayButton.m; sourceTree = "<group>"; };
+		3BEED1B0180B9ACC00CABE47 /* YJTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTabBar.h; sourceTree = "<group>"; };
+		3BEED1B1180B9ACC00CABE47 /* YJTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTabBar.m; sourceTree = "<group>"; };
+		3BEED1B2180B9ACC00CABE47 /* YJTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTableView.h; sourceTree = "<group>"; };
+		3BEED1B3180B9ACC00CABE47 /* YJTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTableView.m; sourceTree = "<group>"; };
+		3BEED1B4180B9ACC00CABE47 /* YJTextFiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTextFiled.h; sourceTree = "<group>"; };
+		3BEED1B5180B9ACC00CABE47 /* YJTextFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTextFiled.m; sourceTree = "<group>"; };
+		3BEED1B6180B9ACC00CABE47 /* YJTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTextView.h; sourceTree = "<group>"; };
+		3BEED1B7180B9ACC00CABE47 /* YJTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTextView.m; sourceTree = "<group>"; };
+		3BEED1B8180B9ACC00CABE47 /* YJToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJToolBar.h; sourceTree = "<group>"; };
+		3BEED1B9180B9ACC00CABE47 /* YJToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJToolBar.m; sourceTree = "<group>"; };
+		3BEED1BA180B9ACC00CABE47 /* YJTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTouchView.h; sourceTree = "<group>"; };
+		3BEED1BB180B9ACC00CABE47 /* YJTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTouchView.m; sourceTree = "<group>"; };
+		3BEED1BC180B9ACC00CABE47 /* YJView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJView.h; sourceTree = "<group>"; };
+		3BEED1BD180B9ACC00CABE47 /* YJView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJView.m; sourceTree = "<group>"; };
+		3BEED1BE180B9ACC00CABE47 /* YJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJViewController.h; sourceTree = "<group>"; };
+		3BEED1BF180B9ACC00CABE47 /* YJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJViewController.m; sourceTree = "<group>"; };
+		3BEED1C0180B9ACC00CABE47 /* YJViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJViewDelegate.h; sourceTree = "<group>"; };
+		3BEED1C1180B9ACC00CABE47 /* YJWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJWindow.h; sourceTree = "<group>"; };
+		3BEED1C2180B9ACC00CABE47 /* YJWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJWindow.m; sourceTree = "<group>"; };
+		3BF236581809244800B311FE /* YJLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BF2365B1809244800B311FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3BF2365D1809244800B311FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3BF2365F1809244800B311FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3BF236631809244800B311FE /* YJLib-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YJLib-Info.plist"; sourceTree = "<group>"; };
+		3BF236651809244800B311FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3BF236671809244800B311FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3BF236691809244800B311FE /* YJLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YJLib-Prefix.pch"; sourceTree = "<group>"; };
+		3BF2366A1809244800B311FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3BF2366B1809244800B311FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3BF2366D1809244800B311FE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3BF2366F1809244800B311FE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3BF236711809244800B311FE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BEECF8B180B993500CABE47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BF236551809244800B311FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BEECF88180B988700CABE47 /* QuartzCore.framework in Frameworks */,
+				3BEECF86180B987A00CABE47 /* libsqlite3.dylib in Frameworks */,
+				3BF2365C1809244800B311FE /* UIKit.framework in Frameworks */,
+				3BF2365E1809244800B311FE /* Foundation.framework in Frameworks */,
+				3BF236601809244800B311FE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B0B6B9A180E7D9000081484 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		3BEECF89180B98FD00CABE47 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				3BD1BD191829D61F00B553C9 /* option_btn_default.png */,
+				3BD1BD1A1829D61F00B553C9 /* option_btn_selected.png */,
+				3B483314180BA9360013EFE8 /* ListViewController.h */,
+				3B483315180BA9360013EFE8 /* ListViewController.m */,
+				3B0B6B64180E328B00081484 /* TestYJTestViewController.h */,
+				3B0B6B65180E328B00081484 /* TestYJTestViewController.m */,
+				3B0B6B66180E328B00081484 /* TestYJTestViewController.xib */,
+				3BDC6F80182745C8006606BA /* TestYJTableViewViewController.h */,
+				3BDC6F81182745C8006606BA /* TestYJTableViewViewController.m */,
+			);
+			name = Src;
+			sourceTree = "<group>";
+		};
+		3BEECF90180B993500CABE47 /* YJIOS */ = {
+			isa = PBXGroup;
+			children = (
+				3BEECF91180B993500CABE47 /* Supporting Files */,
+			);
+			path = YJIOS;
+			sourceTree = "<group>";
+		};
+		3BEECF91180B993500CABE47 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BEECF92180B993500CABE47 /* YJIOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BEED106180B9ACB00CABE47 /* FlashImage */ = {
+			isa = PBXGroup;
+			children = (
+				3BEED107180B9ACB00CABE47 /* YJFlashImageView.h */,
+				3BEED108180B9ACB00CABE47 /* YJFlashImageView.m */,
+				3BEED109180B9ACB00CABE47 /* YJFlashImageViewController.h */,
+				3BEED10A180B9ACB00CABE47 /* YJFlashImageViewController.m */,
+			);
+			name = FlashImage;
+			path = Lib/FlashImage;
+			sourceTree = "<group>";
+		};
+		3BEED10B180B9ACB00CABE47 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				3BEED10C180B9ACB00CABE47 /* Function.h */,
+				3BEED10D180B9ACB00CABE47 /* Function.m */,
+				3BEED10E180B9ACB00CABE47 /* LoginPopedomManager.h */,
+				3BEED10F180B9ACB00CABE47 /* LoginPopedomManager.m */,
+				3BEED110180B9ACB00CABE47 /* YJIOSLib.h */,
+				3BEED111180B9ACB00CABE47 /* YJIOSLibDefine.h */,
+				3BEED112180B9ACB00CABE47 /* YJMessageCenter.h */,
+				3BEED113180B9ACB00CABE47 /* YJMessageCenter.m */,
+				3BEED114180B9ACB00CABE47 /* YJPublic.h */,
+				3BEED115180B9ACB00CABE47 /* YJPublic.m */,
+				3BEED116180B9ACB00CABE47 /* YJPublicPro.h */,
+				3BEED117180B9ACB00CABE47 /* YJPublicPro.m */,
+				3BEED118180B9ACB00CABE47 /* YJTargetList.h */,
+				3BEED119180B9ACB00CABE47 /* YJTargetList.m */,
+			);
+			name = Public;
+			path = Lib/Public;
+			sourceTree = "<group>";
+		};
+		3BEED11A180B9ACB00CABE47 /* YJAnimation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = YJAnimation;
+			path = Lib/YJAnimation;
+			sourceTree = "<group>";
+		};
+		3BEED11B180B9ACB00CABE47 /* YJAudio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = YJAudio;
+			path = Lib/YJAudio;
+			sourceTree = "<group>";
+		};
+		3BEED11C180B9ACB00CABE47 /* YJDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				3BEED11D180B9ACB00CABE47 /* YJDatabase_c.h */,
+				3BEED11E180B9ACB00CABE47 /* YJDatabase_c.m */,
+				3BEED11F180B9ACB00CABE47 /* YJDatabaseDefine.h */,
+			);
+			name = YJDatabase;
+			path = Lib/YJDatabase;
+			sourceTree = "<group>";
+		};
+		3BEED120180B9ACB00CABE47 /* YJDataHandle */ = {
+			isa = PBXGroup;
+			children = (
+				3BEED121180B9ACB00CABE47 /* LYFileDownload.h */,
+				3BEED122180B9ACB00CABE47 /* LYFileDownload.m */,
+				3BEED123180B9ACB00CABE47 /* NSArray+typeCheck.h */,
+				3BEED124180B9ACB00CABE47 /* NSArray+typeCheck.m */,
+				3BEED125180B9ACB00CABE47 /* NSDictionary+typeCheck.h */,
+				3BEED126180B9ACB00CABE47 /* NSDictionary+typeCheck.m */,
+				3BEED127180B9ACB00CABE47 /* YJChar.h */,
+				3BEED128180B9ACB00CABE47 /* YJChar.m */,
+				3BEED129180B9ACB00CABE47 /* YJCrashRecorder.h */,
+				3BEED12A180B9ACB00CABE47 /* YJCrashRecorder.m */,
+				3BEED12B180B9ACB00CABE47 /* YJDataCenter.h */,
+				3BEED12C180B9ACB00CABE47 /* YJDataCenter.m */,
+				3BEED12D180B9ACB00CABE47 /* YJEncrypt.h */,
+				3BEED12E180B9ACB00CABE47 /* YJEncrypt.m */,
+				3BEED12F180B9ACB00CABE47 /* YJFont.h */,
+				3BEED130180B9ACB00CABE47 /* YJFont.m */,
+				3BEED131180B9ACB00CABE47 /* YJString.h */,
+				3BEED132180B9ACB00CABE47 /* YJString.m */,
+				3BEED133180B9ACB00CABE47 /* YJXMLParse.h */,
+				3BEED134180B9ACB00CABE47 /* YJXMLParse.m */,
+			);
+			name = YJDataHandle;
+			path = Lib/YJDataHandle;
+			sourceTree = "<group>";
+		};
+		3BEED135180B9ACB00CABE47 /* YJFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				3BEED136180B9ACB00CABE47 /* YJFileManager.h */,
+				3BEED137180B9ACB00CABE47 /* YJFileManager.m */,
+				3BEED138180B9ACB00CABE47 /* YJFileManagerViewController.h */,
+				3BEED139180B9ACB00CABE47 /* YJFileManagerViewController.m */,
+				3BEED13A180B9ACB00CABE47 /* YJScanViewController.h */,
+				3BEED13B180B9ACB00CABE47 /* YJScanViewController.m */,
+			);
+			name = YJFileManager;
+			path = Lib/YJFileManager;
+			sourceTree = "<group>";
+		};
+		3BEED13C180B9ACB00CABE47 /* YJGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				3BEED13D180B9ACB00CABE47 /* YJGraphicsModel.h */,
+				3BEED13E180B9ACB00CABE47 /* YJGraphicsModel.m */,
+				3BEED13F180B9ACB00CABE47 /* YJPieChartView.h */,
+				3BEED140180B9ACB00CABE47 /* YJPieChartView.m */,
+			);
+			name = YJGraphics;
+			path = Lib/YJGraphics;
+			sourceTree = "<group>";
+		};
+		3BEED141180B9ACB00CABE47 /* YJImageHandle */ = {
+			isa = PBXGroup;
+			children = (
+				3BEED142180B9ACB00CABE47 /* YJImageManager.h */,
+				3BEED143180B9ACB00CABE47 /* YJImageManager.m */,
+			);
+			name = YJImageHandle;
+			path = Lib/YJImageHandle;
+			sourceTree = "<group>";
+		};
+		3BEED144180B9ACB00CABE47 /* YJLayer */ = {
+			isa = PBXGroup;
+			children = (
+				3BEED145180B9ACB00CABE47 /* YJGradientLayer.h */,
+				3BEED146180B9ACB00CABE47 /* YJGradientLayer.m */,
+			);
+			name = YJLayer;
+			path = Lib/YJLayer;
+			sourceTree = "<group>";
+		};
+		3BEED147180B9ACB00CABE47 /* YJLayout */ = {
+			isa = PBXGroup;
+			children = (
+				3BEED148180B9ACB00CABE47 /* YJWindow.plist */,
+			);
+			name = YJLayout;
+			path = Lib/YJLayout;
+			sourceTree = "<group>";
+		};
+		3BEED149180B9ACB00CABE47 /* YJNet */ = {
+			isa = PBXGroup;
+			children = (
+				3BEED14A180B9ACB00CABE47 /* LYJsonCode.h */,
+				3BEED14B180B9ACB00CABE47 /* LYJsonCode.m */,
+				3BEED14C180B9ACB00CABE47 /* SZNetwork.h */,
+				3BEED14D180B9ACB00CABE47 /* SZNetwork.m */,
+			);
+			name = YJNet;
+			path = Lib/YJNet;
+			sourceTree = "<group>";
+		};
+		3BEED14E180B9ACB00CABE47 /* YJTest */ = {
+			isa = PBXGroup;
+			children = (
+				3BEED14F180B9ACB00CABE47 /* YJAnswerView.h */,
+				3BEED150180B9ACB00CABE47 /* YJAnswerView.m */,
+				3BEED151180B9ACB00CABE47 /* YJExamViewController.h */,
+				3BEED152180B9ACB00CABE47 /* YJExamViewController.m */,
+				3BEED153180B9ACB00CABE47 /* YJOptionView.h */,
+				3BEED154180B9ACB00CABE47 /* YJOptionView.m */,
+				3BEED155180B9ACB00CABE47 /* YJQuestion.h */,
+				3BEED156180B9ACB00CABE47 /* YJQuestion.m */,
+				3BEED157180B9ACB00CABE47 /* YJQuestionHandle.h */,
+				3BEED158180B9ACB00CABE47 /* YJQuestionHandle.m */,
+				3BEED159180B9ACB00CABE47 /* YJQuestionView.h */,
+				3BEED15A180B9ACB00CABE47 /* YJQuestionView.m */,
+				3BEED15B180B9ACB00CABE47 /* YJResultView.h */,
+				3BEED15C180B9ACB00CABE47 /* YJResultView.m */,
+				3BEED15D180B9ACC00CABE47 /* YJResultViewController.h */,
+				3BEED15E180B9ACC00CABE47 /* YJResultViewController.m */,
+				3BEED15F180B9ACC00CABE47 /* YJTestDefine.h */,
+				3BEED160180B9ACC00CABE47 /* YJTestDelegate.h */,
+				3BEED161180B9ACC00CABE47 /* YJTestResultHandle.h */,
+				3BEED162180B9ACC00CABE47 /* YJTestResultHandle.m */,
+			);
+			name = YJTest;
+			path = Lib/YJTest;
+			sourceTree = "<group>";
+		};
+		3BEED163180B9ACC00CABE47 /* YJView */ = {
+			isa = PBXGroup;
+			children = (
+				3BEED164180B9ACC00CABE47 /* LYRoundProgressView.h */,
+				3BEED165180B9ACC00CABE47 /* LYRoundProgressView.m */,
+				3BEED166180B9ACC00CABE47 /* LYScrollView.h */,
+				3BEED167180B9ACC00CABE47 /* LYScrollView.m */,
+				3BEED168180B9ACC00CABE47 /* QDAlertView.h */,
+				3BEED169180B9ACC00CABE47 /* QDAlertView.m */,
+				3BEED16A180B9ACC00CABE47 /* YJAlertInputView.h */,
+				3BEED16B180B9ACC00CABE47 /* YJAlertInputView.m */,
+				3BEED16C180B9ACC00CABE47 /* YJBarItem.h */,
+				3BEED16D180B9ACC00CABE47 /* YJBarItem.m */,
+				3BEED16E180B9ACC00CABE47 /* YJButton.h */,
+				3BEED16F180B9ACC00CABE47 /* YJButton.m */,
+				3BEED170180B9ACC00CABE47 /* YJCalendar.h */,
+				3BEED171180B9ACC00CABE47 /* YJCalendar.m */,
+				3BEED172180B9ACC00CABE47 /* YJCalendarCell.h */,
+				3BEED173180B9ACC00CABE47 /* YJCalendarCell.m */,
+				3BEED174180B9ACC00CABE47 /* YJCalendarTableItem.h */,
+				3BEED175180B9ACC00CABE47 /* YJCalendarTableItem.m */,
+				3BEED176180B9ACC00CABE47 /* YJCalendarTableView.h */,
+				3BEED177180B9ACC00CABE47 /* YJCalendarTableView.m */,
+				3BEED178180B9ACC00CABE47 /* YJCardCell.h */,
+				3BEED179180B9ACC00CABE47 /* YJCardCell.m */,
+				3BEED17A180B9ACC00CABE47 /* YJCardView.h */,
+				3BEED17B180B9ACC00CABE47 /* YJCardView.m */,
+				3BEED17C180B9ACC00CABE47 /* YJClipView.h */,
+				3BEED17D180B9ACC00CABE47 /* YJClipView.m */,
+				3BEED17E180B9ACC00CABE47 /* YJContentView.h */,
+				3BEED17F180B9ACC00CABE47 /* YJContentView.m */,
+				3BEED180180B9ACC00CABE47 /* YJDatePickerView.h */,
+				3BEED181180B9ACC00CABE47 /* YJDatePickerView.m */,
+				3BEED182180B9ACC00CABE47 /* YJDrawView.h */,
+				3BEED183180B9ACC00CABE47 /* YJDrawView.m */,
+				3BEED184180B9ACC00CABE47 /* YJFileScanViewController.h */,
+				3BEED185180B9ACC00CABE47 /* YJFileScanViewController.m */,
+				3BEED186180B9ACC00CABE47 /* YJFlagView.h */,
+				3BEED187180B9ACC00CABE47 /* YJFlagView.m */,
+				3BEED188180B9ACC00CABE47 /* YJGridView.h */,
+				3BEED189180B9ACC00CABE47 /* YJGridView.m */,
+				3BEED18A180B9ACC00CABE47 /* YJImageHandleView.h */,
+				3BEED18B180B9ACC00CABE47 /* YJImageHandleView.m */,
+				3BEED18C180B9ACC00CABE47 /* YJImageView.h */,
+				3BEED18D180B9ACC00CABE47 /* YJImageView.m */,
+				3BEED18E180B9ACC00CABE47 /* YJInputView.h */,
+				3BEED18F180B9ACC00CABE47 /* YJInputView.m */,
+				3BEED190180B9ACC00CABE47 /* YJLayoutHandle.h */,
+				3BEED191180B9ACC00CABE47 /* YJLayoutHandle.m */,
+				3BEED192180B9ACC00CABE47 /* YJLoadImageView.h */,
+				3BEED193180B9ACC00CABE47 /* YJLoadImageView.m */,
+				3BEED194180B9ACC00CABE47 /* YJLoginView.h */,
+				3BEED195180B9ACC00CABE47 /* YJLoginView.m */,
+				3BEED196180B9ACC00CABE47 /* YJMainView.h */,
+				3BEED197180B9ACC00CABE47 /* YJMainView.m */,
+				3BEED198180B9ACC00CABE47 /* YJMainViewController.h */,
+				3BEED199180B9ACC00CABE47 /* YJMainViewController.m */,
+				3BEED19A180B9ACC00CABE47 /* YJNavBar.h */,
+				3BEED19B180B9ACC00CABE47 /* YJNavBar.m */,
+				3BEED19C180B9ACC00CABE47 /* YJNavViewController.h */,
+				3BEED19D180B9ACC00CABE47 /* YJNavViewController.m */,
+				3BEED19E180B9ACC00CABE47 /* YJProgressView.h */,
+				3BEED19F180B9ACC00CABE47 /* YJProgressView.m */,
+				3BEED1A0180B9ACC00CABE47 /* YJQuartz2DFunction.h */,
+				3BEED1A1180B9ACC00CABE47 /* YJQuartz2DFunction.m */,
+				3BEED1A2180B9ACC00CABE47 /* YJSearchBar.h */,
+				3BEED1A3180B9ACC00CABE47 /* YJSearchBar.m */,
+				3BEED1A4180B9ACC00CABE47 /* YJSearchShowView.h */,
+				3BEED1A5180B9ACC00CABE47 /* YJSearchShowView.m */,
+				3BEED1A6180B9ACC00CABE47 /* YJSearchView.h */,
+				3BEED1A7180B9ACC00CABE47 /* YJSearchView.m */,
+				3BEED1A8180B9ACC00CABE47 /* YJSegmentControl.h */,
+				3BEED1A9180B9ACC00CABE47 /* YJSegmentControl.mm */,
+				3BEED1AA180B9ACC00CABE47 /* YJSelectView.h */,
+				3BEED1AB180B9ACC00CABE47 /* YJSelectView.m */,
+				3BEED1AC180B9ACC00CABE47 /* YJStatusImage.h */,
+				3BEED1AD180B9ACC00CABE47 /* YJStatusImage.m */,
+				3BEED1AE180B9ACC00CABE47 /* YJStayButton.h */,
+				3BEED1AF180B9ACC00CABE47 /* YJStayButton.m */,
+				3BEED1B0180B9ACC00CABE47 /* YJTabBar.h */,
+				3BEED1B1180B9ACC00CABE47 /* YJTabBar.m */,
+				3BEED1B2180B9ACC00CABE47 /* YJTableView.h */,
+				3BEED1B3180B9ACC00CABE47 /* YJTableView.m */,
+				3BEED1B4180B9ACC00CABE47 /* YJTextFiled.h */,
+				3BEED1B5180B9ACC00CABE47 /* YJTextFiled.m */,
+				3BEED1B6180B9ACC00CABE47 /* YJTextView.h */,
+				3BEED1B7180B9ACC00CABE47 /* YJTextView.m */,
+				3BEED1B8180B9ACC00CABE47 /* YJToolBar.h */,
+				3BEED1B9180B9ACC00CABE47 /* YJToolBar.m */,
+				3BEED1BA180B9ACC00CABE47 /* YJTouchView.h */,
+				3BEED1BB180B9ACC00CABE47 /* YJTouchView.m */,
+				3BEED1BC180B9ACC00CABE47 /* YJView.h */,
+				3BEED1BD180B9ACC00CABE47 /* YJView.m */,
+				3BEED1BE180B9ACC00CABE47 /* YJViewController.h */,
+				3BEED1BF180B9ACC00CABE47 /* YJViewController.m */,
+				3BEED1C0180B9ACC00CABE47 /* YJViewDelegate.h */,
+				3BEED1C1180B9ACC00CABE47 /* YJWindow.h */,
+				3BEED1C2180B9ACC00CABE47 /* YJWindow.m */,
+			);
+			name = YJView;
+			path = Lib/YJView;
+			sourceTree = "<group>";
+		};
+		3BF2364F1809244800B311FE = {
+			isa = PBXGroup;
+			children = (
+				3B0B6BA0180E7E2200081484 /* CoreTelephony.framework */,
+				3BEECF89180B98FD00CABE47 /* Src */,
+				3BF236781809247B00B311FE /* Lib */,
+				3BF236611809244800B311FE /* YJLib */,
+				3BEECF90180B993500CABE47 /* YJIOS */,
+				3BF2365A1809244800B311FE /* Frameworks */,
+				3BF236591809244800B311FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3BF236591809244800B311FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BF236581809244800B311FE /* YJLib.app */,
+				3BEECF8E180B993500CABE47 /* libYJIOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BF2365A1809244800B311FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BEECF85180B987A00CABE47 /* libsqlite3.dylib */,
+				3BEECF87180B988700CABE47 /* QuartzCore.framework */,
+				3BF2365B1809244800B311FE /* UIKit.framework */,
+				3BF2365D1809244800B311FE /* Foundation.framework */,
+				3BF2365F1809244800B311FE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BF236611809244800B311FE /* YJLib */ = {
+			isa = PBXGroup;
+			children = (
+				3BF2366A1809244800B311FE /* AppDelegate.h */,
+				3BF2366B1809244800B311FE /* AppDelegate.m */,
+				3BF236621809244800B311FE /* Supporting Files */,
+			);
+			path = YJLib;
+			sourceTree = "<group>";
+		};
+		3BF236621809244800B311FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BF236631809244800B311FE /* YJLib-Info.plist */,
+				3BF236641809244800B311FE /* InfoPlist.strings */,
+				3BF236671809244800B311FE /* main.m */,
+				3BF236691809244800B311FE /* YJLib-Prefix.pch */,
+				3BF2366D1809244800B311FE /* Default.png */,
+				3BF2366F1809244800B311FE /* Default@2x.png */,
+				3BF236711809244800B311FE /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BF236781809247B00B311FE /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				3B0B6B9A180E7D9000081484 /* Other */,
+				3BEED106180B9ACB00CABE47 /* FlashImage */,
+				3BEED10B180B9ACB00CABE47 /* Public */,
+				3BEED11A180B9ACB00CABE47 /* YJAnimation */,
+				3BEED11B180B9ACB00CABE47 /* YJAudio */,
+				3BEED11C180B9ACB00CABE47 /* YJDatabase */,
+				3BEED120180B9ACB00CABE47 /* YJDataHandle */,
+				3BEED135180B9ACB00CABE47 /* YJFileManager */,
+				3BEED13C180B9ACB00CABE47 /* YJGraphics */,
+				3BEED141180B9ACB00CABE47 /* YJImageHandle */,
+				3BEED144180B9ACB00CABE47 /* YJLayer */,
+				3BEED147180B9ACB00CABE47 /* YJLayout */,
+				3BEED149180B9ACB00CABE47 /* YJNet */,
+				3BEED14E180B9ACB00CABE47 /* YJTest */,
+				3BEED163180B9ACC00CABE47 /* YJView */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3BEED102180B999B00CABE47 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BEED1C3180B9ACC00CABE47 /* YJFlashImageView.h in Headers */,
+				3BEED1C6180B9ACC00CABE47 /* YJFlashImageViewController.h in Headers */,
+				3BEED1C9180B9ACC00CABE47 /* Function.h in Headers */,
+				3BEED1CC180B9ACC00CABE47 /* LoginPopedomManager.h in Headers */,
+				3BEED1CF180B9ACC00CABE47 /* YJIOSLib.h in Headers */,
+				3BEED1D0180B9ACC00CABE47 /* YJIOSLibDefine.h in Headers */,
+				3BEED1D1180B9ACC00CABE47 /* YJMessageCenter.h in Headers */,
+				3BEED1D4180B9ACC00CABE47 /* YJPublic.h in Headers */,
+				3BEED1D7180B9ACC00CABE47 /* YJPublicPro.h in Headers */,
+				3BEED1DA180B9ACC00CABE47 /* YJTargetList.h in Headers */,
+				3BEED1DD180B9ACC00CABE47 /* YJDatabase_c.h in Headers */,
+				3BEED1E0180B9ACC00CABE47 /* YJDatabaseDefine.h in Headers */,
+				3BEED1E1180B9ACC00CABE47 /* LYFileDownload.h in Headers */,
+				3BEED1E4180B9ACC00CABE47 /* NSArray+typeCheck.h in Headers */,
+				3BEED1E7180B9ACC00CABE47 /* NSDictionary+typeCheck.h in Headers */,
+				3BEED1ED180B9ACC00CABE47 /* YJCrashRecorder.h in Headers */,
+				3BEED1F3180B9ACC00CABE47 /* YJEncrypt.h in Headers */,
+				3BEED1F6180B9ACC00CABE47 /* YJFont.h in Headers */,
+				3BEED1F9180B9ACC00CABE47 /* YJString.h in Headers */,
+				3BEED1FC180B9ACC00CABE47 /* YJXMLParse.h in Headers */,
+				3BEED1FF180B9ACC00CABE47 /* YJFileManager.h in Headers */,
+				3BEED202180B9ACC00CABE47 /* YJFileManagerViewController.h in Headers */,
+				3BEED205180B9ACC00CABE47 /* YJScanViewController.h in Headers */,
+				3BEED208180B9ACC00CABE47 /* YJGraphicsModel.h in Headers */,
+				3BEED20B180B9ACC00CABE47 /* YJPieChartView.h in Headers */,
+				3BEED20E180B9ACC00CABE47 /* YJImageManager.h in Headers */,
+				3BEED211180B9ACC00CABE47 /* YJGradientLayer.h in Headers */,
+				3BEED215180B9ACC00CABE47 /* LYJsonCode.h in Headers */,
+				3BEED218180B9ACC00CABE47 /* SZNetwork.h in Headers */,
+				3BEED21B180B9ACC00CABE47 /* YJAnswerView.h in Headers */,
+				3BEED21E180B9ACC00CABE47 /* YJExamViewController.h in Headers */,
+				3BEED221180B9ACC00CABE47 /* YJOptionView.h in Headers */,
+				3BEED224180B9ACC00CABE47 /* YJQuestion.h in Headers */,
+				3BEED227180B9ACC00CABE47 /* YJQuestionHandle.h in Headers */,
+				3BEED22A180B9ACC00CABE47 /* YJQuestionView.h in Headers */,
+				3BEED22D180B9ACC00CABE47 /* YJResultView.h in Headers */,
+				3BEED230180B9ACC00CABE47 /* YJResultViewController.h in Headers */,
+				3BEED233180B9ACC00CABE47 /* YJTestDefine.h in Headers */,
+				3BEED234180B9ACC00CABE47 /* YJTestDelegate.h in Headers */,
+				3BEED235180B9ACC00CABE47 /* YJTestResultHandle.h in Headers */,
+				3BEED238180B9ACC00CABE47 /* LYRoundProgressView.h in Headers */,
+				3BEED23B180B9ACC00CABE47 /* LYScrollView.h in Headers */,
+				3BEED23E180B9ACC00CABE47 /* QDAlertView.h in Headers */,
+				3BEED241180B9ACC00CABE47 /* YJAlertInputView.h in Headers */,
+				3BEED244180B9ACC00CABE47 /* YJBarItem.h in Headers */,
+				3BEED247180B9ACC00CABE47 /* YJButton.h in Headers */,
+				3BEED24A180B9ACC00CABE47 /* YJCalendar.h in Headers */,
+				3BEED24D180B9ACC00CABE47 /* YJCalendarCell.h in Headers */,
+				3BEED250180B9ACC00CABE47 /* YJCalendarTableItem.h in Headers */,
+				3BEED253180B9ACC00CABE47 /* YJCalendarTableView.h in Headers */,
+				3BEED256180B9ACC00CABE47 /* YJCardCell.h in Headers */,
+				3BEED259180B9ACC00CABE47 /* YJCardView.h in Headers */,
+				3BEED25C180B9ACC00CABE47 /* YJClipView.h in Headers */,
+				3BEED25F180B9ACC00CABE47 /* YJContentView.h in Headers */,
+				3BEED262180B9ACC00CABE47 /* YJDatePickerView.h in Headers */,
+				3BEED265180B9ACC00CABE47 /* YJDrawView.h in Headers */,
+				3BEED268180B9ACC00CABE47 /* YJFileScanViewController.h in Headers */,
+				3BEED26B180B9ACC00CABE47 /* YJFlagView.h in Headers */,
+				3BEED26E180B9ACC00CABE47 /* YJGridView.h in Headers */,
+				3BEED271180B9ACC00CABE47 /* YJImageHandleView.h in Headers */,
+				3BEED274180B9ACC00CABE47 /* YJImageView.h in Headers */,
+				3BEED277180B9ACC00CABE47 /* YJInputView.h in Headers */,
+				3BEED27A180B9ACC00CABE47 /* YJLayoutHandle.h in Headers */,
+				3BEED27D180B9ACC00CABE47 /* YJLoadImageView.h in Headers */,
+				3BEED280180B9ACC00CABE47 /* YJLoginView.h in Headers */,
+				3BEED283180B9ACC00CABE47 /* YJMainView.h in Headers */,
+				3BEED286180B9ACC00CABE47 /* YJMainViewController.h in Headers */,
+				3BEED289180B9ACC00CABE47 /* YJNavBar.h in Headers */,
+				3BEED28C180B9ACC00CABE47 /* YJNavViewController.h in Headers */,
+				3BEED28F180B9ACC00CABE47 /* YJProgressView.h in Headers */,
+				3BEED292180B9ACC00CABE47 /* YJQuartz2DFunction.h in Headers */,
+				3BEED295180B9ACC00CABE47 /* YJSearchBar.h in Headers */,
+				3BEED298180B9ACD00CABE47 /* YJSearchShowView.h in Headers */,
+				3BEED29B180B9ACD00CABE47 /* YJSearchView.h in Headers */,
+				3BEED29E180B9ACD00CABE47 /* YJSegmentControl.h in Headers */,
+				3BEED2A1180B9ACD00CABE47 /* YJSelectView.h in Headers */,
+				3BEED2A4180B9ACD00CABE47 /* YJStatusImage.h in Headers */,
+				3BEED2A7180B9ACD00CABE47 /* YJStayButton.h in Headers */,
+				3BEED2AA180B9ACD00CABE47 /* YJTabBar.h in Headers */,
+				3BEED2AD180B9ACD00CABE47 /* YJTableView.h in Headers */,
+				3BEED2B0180B9ACD00CABE47 /* YJTextFiled.h in Headers */,
+				3BEED2B3180B9ACD00CABE47 /* YJTextView.h in Headers */,
+				3BEED2B6180B9ACD00CABE47 /* YJToolBar.h in Headers */,
+				3BEED2B9180B9ACD00CABE47 /* YJTouchView.h in Headers */,
+				3BEED2BC180B9ACD00CABE47 /* YJView.h in Headers */,
+				3BEED2BF180B9ACD00CABE47 /* YJViewController.h in Headers */,
+				3BEED2C2180B9ACD00CABE47 /* YJViewDelegate.h in Headers */,
+				3BEED1EA180B9ACC00CABE47 /* YJChar.h in Headers */,
+				3BEED2C3180B9ACD00CABE47 /* YJWindow.h in Headers */,
+				3BEED1F0180B9ACC00CABE47 /* YJDataCenter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3BEECF8D180B993500CABE47 /* YJIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BEECF97180B993500CABE47 /* Build configuration list for PBXNativeTarget "YJIOS" */;
+			buildPhases = (
+				3BEECF8A180B993500CABE47 /* Sources */,
+				3BEECF8B180B993500CABE47 /* Frameworks */,
+				3BEECF8C180B993500CABE47 /* CopyFiles */,
+				3BEED102180B999B00CABE47 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YJIOS;
+			productName = YJIOS;
+			productReference = 3BEECF8E180B993500CABE47 /* libYJIOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3BF236571809244800B311FE /* YJLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BF236751809244800B311FE /* Build configuration list for PBXNativeTarget "YJLib" */;
+			buildPhases = (
+				3BF236541809244800B311FE /* Sources */,
+				3BF236551809244800B311FE /* Frameworks */,
+				3BF236561809244800B311FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YJLib;
+			productName = YJLib;
+			productReference = 3BF236581809244800B311FE /* YJLib.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BF236501809244800B311FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = szfore;
+			};
+			buildConfigurationList = 3BF236531809244800B311FE /* Build configuration list for PBXProject "YJLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3BF2364F1809244800B311FE;
+			productRefGroup = 3BF236591809244800B311FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BF236571809244800B311FE /* YJLib */,
+				3BEECF8D180B993500CABE47 /* YJIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BF236561809244800B311FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BF236661809244800B311FE /* InfoPlist.strings in Resources */,
+				3BF2366E1809244800B311FE /* Default.png in Resources */,
+				3BF236701809244800B311FE /* Default@2x.png in Resources */,
+				3BF236721809244800B311FE /* Default-568h@2x.png in Resources */,
+				3BEED214180B9ACC00CABE47 /* YJWindow.plist in Resources */,
+				3B0B6B68180E328B00081484 /* TestYJTestViewController.xib in Resources */,
+				3BD1BD1B1829D61F00B553C9 /* option_btn_default.png in Resources */,
+				3BD1BD1C1829D61F00B553C9 /* option_btn_selected.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BEECF8A180B993500CABE47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BEED1C5180B9ACC00CABE47 /* YJFlashImageView.m in Sources */,
+				3BEED1C8180B9ACC00CABE47 /* YJFlashImageViewController.m in Sources */,
+				3BEED1CB180B9ACC00CABE47 /* Function.m in Sources */,
+				3BEED1CE180B9ACC00CABE47 /* LoginPopedomManager.m in Sources */,
+				3BEED1D3180B9ACC00CABE47 /* YJMessageCenter.m in Sources */,
+				3BEED1D6180B9ACC00CABE47 /* YJPublic.m in Sources */,
+				3BEED1D9180B9ACC00CABE47 /* YJPublicPro.m in Sources */,
+				3BEED1DC180B9ACC00CABE47 /* YJTargetList.m in Sources */,
+				3BEED1DF180B9ACC00CABE47 /* YJDatabase_c.m in Sources */,
+				3BEED1E3180B9ACC00CABE47 /* LYFileDownload.m in Sources */,
+				3BEED1E6180B9ACC00CABE47 /* NSArray+typeCheck.m in Sources */,
+				3BEED1E9180B9ACC00CABE47 /* NSDictionary+typeCheck.m in Sources */,
+				3BEED1EC180B9ACC00CABE47 /* YJChar.m in Sources */,
+				3BEED1EF180B9ACC00CABE47 /* YJCrashRecorder.m in Sources */,
+				3BEED1F2180B9ACC00CABE47 /* YJDataCenter.m in Sources */,
+				3BEED1F5180B9ACC00CABE47 /* YJEncrypt.m in Sources */,
+				3BEED1F8180B9ACC00CABE47 /* YJFont.m in Sources */,
+				3BEED1FB180B9ACC00CABE47 /* YJString.m in Sources */,
+				3BEED1FE180B9ACC00CABE47 /* YJXMLParse.m in Sources */,
+				3BEED201180B9ACC00CABE47 /* YJFileManager.m in Sources */,
+				3BEED204180B9ACC00CABE47 /* YJFileManagerViewController.m in Sources */,
+				3BEED207180B9ACC00CABE47 /* YJScanViewController.m in Sources */,
+				3BEED20A180B9ACC00CABE47 /* YJGraphicsModel.m in Sources */,
+				3BEED20D180B9ACC00CABE47 /* YJPieChartView.m in Sources */,
+				3BEED210180B9ACC00CABE47 /* YJImageManager.m in Sources */,
+				3BEED213180B9ACC00CABE47 /* YJGradientLayer.m in Sources */,
+				3BEED217180B9ACC00CABE47 /* LYJsonCode.m in Sources */,
+				3BEED21A180B9ACC00CABE47 /* SZNetwork.m in Sources */,
+				3BEED21D180B9ACC00CABE47 /* YJAnswerView.m in Sources */,
+				3BEED220180B9ACC00CABE47 /* YJExamViewController.m in Sources */,
+				3BEED223180B9ACC00CABE47 /* YJOptionView.m in Sources */,
+				3BEED226180B9ACC00CABE47 /* YJQuestion.m in Sources */,
+				3BEED229180B9ACC00CABE47 /* YJQuestionHandle.m in Sources */,
+				3BEED22C180B9ACC00CABE47 /* YJQuestionView.m in Sources */,
+				3BEED22F180B9ACC00CABE47 /* YJResultView.m in Sources */,
+				3BEED232180B9ACC00CABE47 /* YJResultViewController.m in Sources */,
+				3BEED237180B9ACC00CABE47 /* YJTestResultHandle.m in Sources */,
+				3BEED23A180B9ACC00CABE47 /* LYRoundProgressView.m in Sources */,
+				3BEED23D180B9ACC00CABE47 /* LYScrollView.m in Sources */,
+				3BEED240180B9ACC00CABE47 /* QDAlertView.m in Sources */,
+				3BEED243180B9ACC00CABE47 /* YJAlertInputView.m in Sources */,
+				3BEED246180B9ACC00CABE47 /* YJBarItem.m in Sources */,
+				3BEED249180B9ACC00CABE47 /* YJButton.m in Sources */,
+				3BEED24C180B9ACC00CABE47 /* YJCalendar.m in Sources */,
+				3BEED24F180B9ACC00CABE47 /* YJCalendarCell.m in Sources */,
+				3BEED252180B9ACC00CABE47 /* YJCalendarTableItem.m in Sources */,
+				3BEED255180B9ACC00CABE47 /* YJCalendarTableView.m in Sources */,
+				3BEED258180B9ACC00CABE47 /* YJCardCell.m in Sources */,
+				3BEED25B180B9ACC00CABE47 /* YJCardView.m in Sources */,
+				3BEED25E180B9ACC00CABE47 /* YJClipView.m in Sources */,
+				3BEED261180B9ACC00CABE47 /* YJContentView.m in Sources */,
+				3BEED264180B9ACC00CABE47 /* YJDatePickerView.m in Sources */,
+				3BEED267180B9ACC00CABE47 /* YJDrawView.m in Sources */,
+				3BEED26A180B9ACC00CABE47 /* YJFileScanViewController.m in Sources */,
+				3BEED26D180B9ACC00CABE47 /* YJFlagView.m in Sources */,
+				3BEED270180B9ACC00CABE47 /* YJGridView.m in Sources */,
+				3BEED273180B9ACC00CABE47 /* YJImageHandleView.m in Sources */,
+				3BEED276180B9ACC00CABE47 /* YJImageView.m in Sources */,
+				3BEED279180B9ACC00CABE47 /* YJInputView.m in Sources */,
+				3BEED27C180B9ACC00CABE47 /* YJLayoutHandle.m in Sources */,
+				3BEED27F180B9ACC00CABE47 /* YJLoadImageView.m in Sources */,
+				3BEED282180B9ACC00CABE47 /* YJLoginView.m in Sources */,
+				3BEED285180B9ACC00CABE47 /* YJMainView.m in Sources */,
+				3BEED288180B9ACC00CABE47 /* YJMainViewController.m in Sources */,
+				3BEED28B180B9ACC00CABE47 /* YJNavBar.m in Sources */,
+				3BEED28E180B9ACC00CABE47 /* YJNavViewController.m in Sources */,
+				3BEED291180B9ACC00CABE47 /* YJProgressView.m in Sources */,
+				3BEED294180B9ACC00CABE47 /* YJQuartz2DFunction.m in Sources */,
+				3BEED297180B9ACC00CABE47 /* YJSearchBar.m in Sources */,
+				3BEED29A180B9ACD00CABE47 /* YJSearchShowView.m in Sources */,
+				3BEED29D180B9ACD00CABE47 /* YJSearchView.m in Sources */,
+				3BEED2A0180B9ACD00CABE47 /* YJSegmentControl.mm in Sources */,
+				3BEED2A3180B9ACD00CABE47 /* YJSelectView.m in Sources */,
+				3BEED2A6180B9ACD00CABE47 /* YJStatusImage.m in Sources */,
+				3BEED2A9180B9ACD00CABE47 /* YJStayButton.m in Sources */,
+				3BEED2AC180B9ACD00CABE47 /* YJTabBar.m in Sources */,
+				3BEED2AF180B9ACD00CABE47 /* YJTableView.m in Sources */,
+				3BEED2B2180B9ACD00CABE47 /* YJTextFiled.m in Sources */,
+				3BEED2B5180B9ACD00CABE47 /* YJTextView.m in Sources */,
+				3BEED2B8180B9ACD00CABE47 /* YJToolBar.m in Sources */,
+				3BEED2BB180B9ACD00CABE47 /* YJTouchView.m in Sources */,
+				3BEED2BE180B9ACD00CABE47 /* YJView.m in Sources */,
+				3BEED2C1180B9ACD00CABE47 /* YJViewController.m in Sources */,
+				3BEED2C5180B9ACD00CABE47 /* YJWindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BF236541809244800B311FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BF236681809244800B311FE /* main.m in Sources */,
+				3BF2366C1809244800B311FE /* AppDelegate.m in Sources */,
+				3BEED1C4180B9ACC00CABE47 /* YJFlashImageView.m in Sources */,
+				3BEED1C7180B9ACC00CABE47 /* YJFlashImageViewController.m in Sources */,
+				3BEED1CA180B9ACC00CABE47 /* Function.m in Sources */,
+				3BEED1CD180B9ACC00CABE47 /* LoginPopedomManager.m in Sources */,
+				3BEED1D2180B9ACC00CABE47 /* YJMessageCenter.m in Sources */,
+				3BEED1D5180B9ACC00CABE47 /* YJPublic.m in Sources */,
+				3BEED1D8180B9ACC00CABE47 /* YJPublicPro.m in Sources */,
+				3BEED1DB180B9ACC00CABE47 /* YJTargetList.m in Sources */,
+				3BEED1DE180B9ACC00CABE47 /* YJDatabase_c.m in Sources */,
+				3BEED1E2180B9ACC00CABE47 /* LYFileDownload.m in Sources */,
+				3BEED1E5180B9ACC00CABE47 /* NSArray+typeCheck.m in Sources */,
+				3BEED1E8180B9ACC00CABE47 /* NSDictionary+typeCheck.m in Sources */,
+				3BEED1EB180B9ACC00CABE47 /* YJChar.m in Sources */,
+				3BEED1EE180B9ACC00CABE47 /* YJCrashRecorder.m in Sources */,
+				3BEED1F1180B9ACC00CABE47 /* YJDataCenter.m in Sources */,
+				3BEED1F4180B9ACC00CABE47 /* YJEncrypt.m in Sources */,
+				3BEED1F7180B9ACC00CABE47 /* YJFont.m in Sources */,
+				3BEED1FA180B9ACC00CABE47 /* YJString.m in Sources */,
+				3BEED1FD180B9ACC00CABE47 /* YJXMLParse.m in Sources */,
+				3BEED200180B9ACC00CABE47 /* YJFileManager.m in Sources */,
+				3BEED203180B9ACC00CABE47 /* YJFileManagerViewController.m in Sources */,
+				3BEED206180B9ACC00CABE47 /* YJScanViewController.m in Sources */,
+				3BEED209180B9ACC00CABE47 /* YJGraphicsModel.m in Sources */,
+				3BEED20C180B9ACC00CABE47 /* YJPieChartView.m in Sources */,
+				3BEED20F180B9ACC00CABE47 /* YJImageManager.m in Sources */,
+				3BEED212180B9ACC00CABE47 /* YJGradientLayer.m in Sources */,
+				3BEED216180B9ACC00CABE47 /* LYJsonCode.m in Sources */,
+				3BEED219180B9ACC00CABE47 /* SZNetwork.m in Sources */,
+				3BEED21C180B9ACC00CABE47 /* YJAnswerView.m in Sources */,
+				3BEED21F180B9ACC00CABE47 /* YJExamViewController.m in Sources */,
+				3BEED222180B9ACC00CABE47 /* YJOptionView.m in Sources */,
+				3BEED225180B9ACC00CABE47 /* YJQuestion.m in Sources */,
+				3BEED228180B9ACC00CABE47 /* YJQuestionHandle.m in Sources */,
+				3BEED22B180B9ACC00CABE47 /* YJQuestionView.m in Sources */,
+				3BEED22E180B9ACC00CABE47 /* YJResultView.m in Sources */,
+				3BEED231180B9ACC00CABE47 /* YJResultViewController.m in Sources */,
+				3BEED236180B9ACC00CABE47 /* YJTestResultHandle.m in Sources */,
+				3BEED239180B9ACC00CABE47 /* LYRoundProgressView.m in Sources */,
+				3BEED23C180B9ACC00CABE47 /* LYScrollView.m in Sources */,
+				3BEED23F180B9ACC00CABE47 /* QDAlertView.m in Sources */,
+				3BEED242180B9ACC00CABE47 /* YJAlertInputView.m in Sources */,
+				3BEED245180B9ACC00CABE47 /* YJBarItem.m in Sources */,
+				3BEED248180B9ACC00CABE47 /* YJButton.m in Sources */,
+				3BEED24B180B9ACC00CABE47 /* YJCalendar.m in Sources */,
+				3BEED24E180B9ACC00CABE47 /* YJCalendarCell.m in Sources */,
+				3BEED251180B9ACC00CABE47 /* YJCalendarTableItem.m in Sources */,
+				3BEED254180B9ACC00CABE47 /* YJCalendarTableView.m in Sources */,
+				3BEED257180B9ACC00CABE47 /* YJCardCell.m in Sources */,
+				3BEED25A180B9ACC00CABE47 /* YJCardView.m in Sources */,
+				3BEED25D180B9ACC00CABE47 /* YJClipView.m in Sources */,
+				3BEED260180B9ACC00CABE47 /* YJContentView.m in Sources */,
+				3BEED263180B9ACC00CABE47 /* YJDatePickerView.m in Sources */,
+				3BEED266180B9ACC00CABE47 /* YJDrawView.m in Sources */,
+				3BEED269180B9ACC00CABE47 /* YJFileScanViewController.m in Sources */,
+				3BEED26C180B9ACC00CABE47 /* YJFlagView.m in Sources */,
+				3BEED26F180B9ACC00CABE47 /* YJGridView.m in Sources */,
+				3BEED272180B9ACC00CABE47 /* YJImageHandleView.m in Sources */,
+				3BEED275180B9ACC00CABE47 /* YJImageView.m in Sources */,
+				3BEED278180B9ACC00CABE47 /* YJInputView.m in Sources */,
+				3BEED27B180B9ACC00CABE47 /* YJLayoutHandle.m in Sources */,
+				3BEED27E180B9ACC00CABE47 /* YJLoadImageView.m in Sources */,
+				3BEED281180B9ACC00CABE47 /* YJLoginView.m in Sources */,
+				3BEED284180B9ACC00CABE47 /* YJMainView.m in Sources */,
+				3BEED287180B9ACC00CABE47 /* YJMainViewController.m in Sources */,
+				3BEED28A180B9ACC00CABE47 /* YJNavBar.m in Sources */,
+				3BEED28D180B9ACC00CABE47 /* YJNavViewController.m in Sources */,
+				3BEED290180B9ACC00CABE47 /* YJProgressView.m in Sources */,
+				3BEED293180B9ACC00CABE47 /* YJQuartz2DFunction.m in Sources */,
+				3BEED296180B9ACC00CABE47 /* YJSearchBar.m in Sources */,
+				3BEED299180B9ACD00CABE47 /* YJSearchShowView.m in Sources */,
+				3BEED29C180B9ACD00CABE47 /* YJSearchView.m in Sources */,
+				3BEED29F180B9ACD00CABE47 /* YJSegmentControl.mm in Sources */,
+				3BEED2A2180B9ACD00CABE47 /* YJSelectView.m in Sources */,
+				3BEED2A5180B9ACD00CABE47 /* YJStatusImage.m in Sources */,
+				3BEED2A8180B9ACD00CABE47 /* YJStayButton.m in Sources */,
+				3BEED2AB180B9ACD00CABE47 /* YJTabBar.m in Sources */,
+				3BEED2AE180B9ACD00CABE47 /* YJTableView.m in Sources */,
+				3BEED2B1180B9ACD00CABE47 /* YJTextFiled.m in Sources */,
+				3BEED2B4180B9ACD00CABE47 /* YJTextView.m in Sources */,
+				3BEED2B7180B9ACD00CABE47 /* YJToolBar.m in Sources */,
+				3BEED2BA180B9ACD00CABE47 /* YJTouchView.m in Sources */,
+				3BEED2BD180B9ACD00CABE47 /* YJView.m in Sources */,
+				3BEED2C0180B9ACD00CABE47 /* YJViewController.m in Sources */,
+				3BEED2C4180B9ACD00CABE47 /* YJWindow.m in Sources */,
+				3B483316180BA9360013EFE8 /* ListViewController.m in Sources */,
+				3B0B6B67180E328B00081484 /* TestYJTestViewController.m in Sources */,
+				3BDC6F82182745C8006606BA /* TestYJTableViewViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3BF236641809244800B311FE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BF236651809244800B311FE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BEECF98180B993500CABE47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/YJIOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YJIOS/YJIOS-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3BEECF99180B993500CABE47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/YJIOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YJIOS/YJIOS-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3BF236731809244800B311FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3BF236741809244800B311FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BF236761809244800B311FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YJLib/YJLib-Prefix.pch";
+				INFOPLIST_FILE = "YJLib/YJLib-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3BF236771809244800B311FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YJLib/YJLib-Prefix.pch";
+				INFOPLIST_FILE = "YJLib/YJLib-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BEECF97180B993500CABE47 /* Build configuration list for PBXNativeTarget "YJIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BEECF98180B993500CABE47 /* Debug */,
+				3BEECF99180B993500CABE47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BF236531809244800B311FE /* Build configuration list for PBXProject "YJLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BF236731809244800B311FE /* Debug */,
+				3BF236741809244800B311FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BF236751809244800B311FE /* Build configuration list for PBXNativeTarget "YJLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BF236761809244800B311FE /* Debug */,
+				3BF236771809244800B311FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BF236501809244800B311FE /* Project object */;
+}

@@ -1,0 +1,46 @@
+/*
+ 定义如下：
+ //YJNavBar dictKeyDefines
+ #define key_image_backgroud_nav @"backgroudImageKey_nav"
+ #define title_nav @"title_nav"
+ #define title_left_nav @"title_left_nav"
+ #define title_right_nav @"title_right_nav"
+ 
+ #define LEFT_ITEM_FLAG @"YJNavBarLeftItem"
+ #define RIGHT_ITEM_FLAG @"YJNavBarRightItem"
+ */
+//可以根据ITEM_FLAG找到对应的item\
+YJButton *leftItem=(YJButton *)[self getYJFlagViewWithFlag:LEFT_ITEM_FLAG];
+
+#import "YJTouchView.h"
+#import "YJButton.h"
+#import "YJQuartz2DFunction.h"
+
+#define YJLAYOUT_YJNAVBAR_TITLE            @"title"
+#define YJLAYOUT_YJNAVBAR_BACKGROUNG_IMAGE @"backgroundImage"
+#define YJLAYOUT_YJNAVBAR_LEFT_ITEM        @"leftItem"
+#define YJLAYOUT_YJNAVBAR_RIGHT_ITEM       @"rightItem"
+@class YJNavBar;
+@protocol YJNavBarDelegate <YJTouchViewDelegate>
+@optional
+-(void)leftItemPressed:(YJButton *)item nav:(YJNavBar *)nav;
+-(void)rightItemPressed:(YJButton *)item nav:(YJNavBar *)nav;
+@end
+@interface YJNavBar : YJTouchView
+{
+    YJButton *leftItem;
+    YJButton *rightItem;
+    UILabel *titleLa;
+    float height;
+}
+@property(nonatomic,assign)id<YJNavBarDelegate>delegate_navBar;
+@property(nonatomic,retain)UIImage *backgroundImage;
+@property(nonatomic,assign)BOOL showLeftItem;
+@property(nonatomic,assign)BOOL showRightItem;
+@property(nonatomic,retain)NSString *title;
+-(void)setUpLeftItemTitle:(NSString *)leftTitle;
+-(void)setUpRightItemTitle:(NSString *)rightTitle;
+//
+-(void)createRightItmWithDict:(NSDictionary *)dict;
+-(void)createLeftItmWithDict:(NSDictionary *)dict;
+@end

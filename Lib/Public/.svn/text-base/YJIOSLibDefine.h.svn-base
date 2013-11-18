@@ -1,0 +1,95 @@
+//
+//  YJIOSLibDefine.h
+//  TestYJFramework
+//
+//  Created by szfore on 13-5-21.
+//  Copyright (c) 2013年 szfore. All rights reserved.
+//
+
+#ifndef TestYJFramework_YJIOSLibDefine_h
+#define TestYJFramework_YJIOSLibDefine_h
+
+//i5屏幕支持
+#define I5_SCREEN_SUPPORT
+//取消对i5屏幕支持
+#undef  I5_SCREEN_SUPPORT
+
+#define TAG_START 5000
+
+#define YJDUBEG
+
+
+#define GLOBAL_QUEUE dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+
+#define KEY_WINDOW [UIApplication sharedApplication].keyWindow
+
+#define COLOR_WITH_RGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+#define COLOR_WITH_RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a/255.0]
+
+#ifdef YJDUBEG
+#define DEALLOC_PRINTF printf(("\n%s"), __PRETTY_FUNCTION__);
+#else
+#define DEALLOC_PRINTF 
+#endif
+
+#define CHECK_PAR_AND_RETURN_NULL(par) do{if(!par){printf("参数传入为空，返回null\n");return nil;}}while (0)
+
+#define SHOW_MSG_AND_RETURN(ctx,msg) do{[ctx showAlertWithMessage:msg];return;}while(0)
+
+#define SET_PAR(_p,p) do{[p retain];[_p release];_p=p;}while(0)
+
+
+#define ERROR_LOG(c,error) do{if(error)NSLog(@"%@ line:%d error:%@",NSStringFromClass([c class]),__LINE__,error);}while(0)
+
+//#define CREATE(__CLASS__,obj)  obj=obj_create(NSClassFromString(@"__CLASS__"))
+#define SAFE_COLOR(x) ((x)>0.0f?((x)>255.0f?255.0f:(x)):0.0f)
+#define SAFE_RELEASE(p) do{if(p){[p release];p=nil;}}while(0)
+#define SAFE_FREE(p) do{if(p){free(p);p=NULL;}}while(0)
+#define SAFE_BLOCK_RELEASE(block) do{if(block)Block_release(block);block=NULL;}while(0);
+#define SET_BLOCK(_b,b) do{/*if(!b){_b=NULL;break;}*/if(_b)Block_release(_b); _b=Block_copy(b);}while(0)
+
+#define CLOSE_TIMER(t) do{if(t){[t invalidate];t=nil;}}while(0);
+
+//block
+typedef void (^backBlock)(id context,NSDictionary *userInfo);
+
+//other
+typedef unsigned char YJStatus;
+#define YJStatusOK 1
+#define YJStatusFail 0
+
+enum YJErrorCode {
+    //network  680**
+    kYJErrorNoNetworkExist = 68001,//网络不存在用户限制了网络请求
+    
+    //json     681**
+    kYJErrorInvalidJSONObject =68101,//不能转换为json串的对象
+    kYJErrorJsonStringToData  =68102,//
+    
+    //JExam     682**
+    kYJExamErrorNoPre = 68201,//已经是第一题
+    kYJExamErrorNoNext,//已经是最后一题
+    kYJExamErrorBeyond//题目索引越界
+    };
+
+typedef enum YJErrorCode YJExamErrorCode;
+
+
+
+enum  {
+    kEntironmentIPhone4 = 0,
+    kEntironmentIPhone5,
+    // kEntironmentIPad
+};
+typedef NSUInteger YJEntironment;
+
+//touch  
+enum
+{
+    kTouchEventCancel=0,
+    kTouchEventBegan,
+    kTouchEventMoved,
+    kTouchEventEnded
+};
+typedef NSInteger YJTouchEvent;
+#endif

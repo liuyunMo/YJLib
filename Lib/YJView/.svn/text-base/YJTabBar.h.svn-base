@@ -1,0 +1,28 @@
+//
+//  YJTabBar.h
+//  YJHealth
+//
+//  Created by szfore on 13-7-5.
+//  Copyright (c) 2013年 szfore. All rights reserved.
+//
+
+#import "YJFlagView.h"
+#import "YJBarItem.h"
+#define  TAB_BAR_RECT CGRectMake(0,[UIScreen mainScreen].applicationFrame.size.height-49,320,49)
+@interface YJTabBar : YJFlagView
+{
+    YJImageView *backgroundImageView;
+}
+@property(nonatomic,assign)id<YJTabBarDelegate> delegate;
+@property(nonatomic,readonly)NSArray *items;
+@property(nonatomic,retain)UIImage *backgroundImage;
+@property(nonatomic,assign)int selectIndex;
+-(id)initWithItemArray:(NSArray *)items;
+@end
+@protocol YJTabBarDelegate <NSObject>
+
+@optional
+-(BOOL)shouldSelectItem:(YJBarItem*)item index:(int)index tabBar:(YJTabBar *)tabBar;
+-(void)deselectItem:(YJBarItem*)item index:(int)index tabBar:(YJTabBar *)tabBar;
+-(void)selectItem:(YJBarItem*)item index:(int)index tabBar:(YJTabBar *)tabBar;
+@end

@@ -1,0 +1,32 @@
+//
+//  YJLayoutHandle.m
+//  TestYJFramework
+//
+//  Created by szfore on 13-7-24.
+//  Copyright (c) 2013年 szfore. All rights reserved.
+//
+
+#import "YJLayoutHandle.h"
+
+CGRect getFrameFromLayoutWithFrameString(NSString *frameStr)
+{
+    CGRect rect={0,0,0,0};
+    if (!frameStr) return rect;
+    NSArray *frameArr=[frameStr componentsSeparatedByString:@","];
+    if (!frameArr||frameArr.count!=4) return rect;
+    rect.origin.x      = [[frameArr objectAtIndex:0] floatValue];
+    rect.origin.y      = [[frameArr objectAtIndex:1] floatValue];
+    rect.size.width    = [[frameArr objectAtIndex:2] floatValue];
+    rect.size.height   = [[frameArr objectAtIndex:3] floatValue];
+    return rect;
+}
+UIColor *getColorFromLayoutWithColorString(NSString *colorStr)
+{
+    NSArray *colorArr=[colorStr componentsSeparatedByString:@","];
+    if (!colorArr||colorArr.count<3) return [UIColor clearColor];
+    float r=SAFE_COLOR([[colorArr objectAtIndex:0] floatValue]);
+    float g=SAFE_COLOR([[colorArr objectAtIndex:1] floatValue]);
+    float b=SAFE_COLOR([[colorArr objectAtIndex:2] floatValue]);
+    float a=SAFE_COLOR(colorArr.count>3?[[colorArr objectAtIndex:3] floatValue]:255);
+    return  COLOR_WITH_RGBA(r, g, b, a);
+}
