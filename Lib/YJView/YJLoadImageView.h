@@ -6,6 +6,8 @@
 //  Copyright (c) 2013年 szfore. All rights reserved.
 //
 
+//这不科学 太麻烦了    以后会取代
+
 #import "YJImageView.h"
 #define DEFAULT_PPT NULL
 @interface YJLoadImageView : YJImageView

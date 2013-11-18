@@ -6,7 +6,7 @@
 //  Copyright (c) 2013年 szfore. All rights reserved.
 //
 
-
+//使用opengl绘制才是正确。。。。
 
 @interface YJDrawView : YJFlagView
 

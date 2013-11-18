@@ -8,7 +8,7 @@
 
 #import "YJViewController.h"
 typedef void(^LoginBlock)(BOOL *showLogin,Class *login);
-typedef void(^FinishBlock)(id result);
+
 @interface YJMainViewController : YJViewController<YJMainViewDelegate>
 @property(nonatomic,copy)LoginBlock login;
 -(void)setLoginModalTransitionStyle:(UIModalTransitionStyle *)style TransitionWithAnimation:(BOOL*)animation;
