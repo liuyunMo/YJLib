@@ -19,7 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    dataToShow=@[@"YJTest",@"YJTableView"];
+    dataToShow=@[@"YJTest",@"YJTableView",@"YJCalender"];
     [dataToShow retain];
     
     UITableView *tab=[[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];

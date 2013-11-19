@@ -10,7 +10,7 @@
 #import "YJCalendarCell.h"
 #import "YJCalendarTableView.h"
 #define CELL_HEIGHT 30
-@interface YJCalendar ()<YJCalendarCellDelegate,YJCalendarTableViewDelegate>
+@interface YJCalendar ()<YJCalendarCellDelegate>
 {
     float currentHeight;
     float beginHeight;
@@ -19,7 +19,7 @@
 @property(nonatomic,retain)NSMutableArray *dayArr;
 @end
 @implementation YJCalendar
--(void)createCalenderView
+-(void)createCalendarView
 {
     YJCalendarCell *cell=[[YJCalendarCell alloc] initWithFrame:CGRectMake(0, 0, 320, 20)];
     cell.backgroundColor=[UIColor whiteColor];
@@ -31,36 +31,18 @@
     beginHeight=20;
     currentHeight=beginHeight;
 }
--(void)changeToType:(YJCalendarType)type animation:(BOOL)animation
-{
-    if (_type!=type) {
-        [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-        _type=type;
-        if (_type==kCalendarTypeNormal) {
-            [self createCalenderView];
-            [self showYear:self.year month:self.month];
-        }else{
-            currentHeight=50-beginHeight;
-            
-            YJCalendarTableView *view=[[YJCalendarTableView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
-            view.delegate=self;
-            [self addSubview:view];
-            [view release];
-        }
-        [UIView animateWithDuration:animation*.25 animations:^{
-            CGRect rect =self.frame;
-            rect.size.height=beginHeight+currentHeight;
-            self.frame=rect;
-        }];
-        if ([self.delegate respondsToSelector:@selector(calenderView:withChangeToHeight:withTime:)]) {
-            [self.delegate calenderView:self withChangeToHeight:currentHeight+beginHeight withTime:animation*.25];
-        }
-    }
-}
 
+-(void)reloadData
+{
+    [selectedIm removeFromSuperview];
+    selectedIm=nil;
+    [self showYear:self.year month:self.month];
+    self.selectDay=_selectDay;
+}
 -(void)showYear:(int)year month:(int)month
 {
     _year=year;_month=month;
+    [selectedIm removeFromSuperview];
     
     float conBeginHeight=currentHeight-beginHeight;
     float sizeHeight=0;
@@ -146,8 +128,8 @@
         }
         [lastWeek addObject:[NSString stringWithFormat:@"%d",currentDay]];
         currentDay++;
-        [self.dayArr addObject:lastWeek];
     }
+    [self.dayArr addObject:lastWeek];
     
     index++;
     YJCalendarCell *lastCell=[[YJCalendarCell alloc] initWithFrame:CGRectMake(0, currentHeight, self.frame.size.width, 30)];
@@ -164,17 +146,11 @@
     
     [formatter release];
     
-    [selectedIm removeFromSuperview];
-    
-    selectedIm=[[UIImageView alloc] initWithFrame:CGRectMake(0, 20, 320/7.0, 30)];
-    selectedIm.hidden=YES;
-    selectedIm.image=[UIImage imageNamed:@"selectDay.png"];
-    [self insertSubview:selectedIm atIndex:0];
-    [selectedIm release];
     
     
-    if ([self.delegate respondsToSelector:@selector(calenderView:withChangeToHeight:withTime:)]) {
-        [self.delegate calenderView:self withChangeToHeight:sizeHeight+beginHeight withTime:.5];
+    
+    if ([self.delegate respondsToSelector:@selector(calendarView:withChangeToHeight:withTime:)]) {
+        [self.delegate calendarView:self withChangeToHeight:sizeHeight+beginHeight withTime:.5];
     }
     
     [UIView animateWithDuration:.5 animations:^{
@@ -210,21 +186,36 @@
              }
              
              
-             if ([self.delegate respondsToSelector:@selector(calenderView:changeToYearFinish:month:)])
+             if ([self.delegate respondsToSelector:@selector(calendarView:changeToYearFinish:month:)])
              {
-                 [self.delegate calenderView:self changeToYearFinish:_year month:_month];
+                 [self.delegate calendarView:self changeToYearFinish:_year month:_month];
              }
+             
+             selectedIm=[[UIImageView alloc] initWithFrame:CGRectMake(0, 20, 320/7.0, 30)];
+             selectedIm.hidden=YES;
+             UIImage *image=nil;
+             if ([self.delegate respondsToSelector:@selector(getSelectDayImage:)]) {
+                 image=[self.delegate getSelectDayImage:self];
+             }else{
+                 image=getNavBarItemDefaultBackgroupImage();
+             }
+             selectedIm.image=image;
+             [self insertSubview:selectedIm atIndex:0];
+             [selectedIm release];
+             
+             self.selectDay=_selectDay;
          }
          
      
      }];
+    
 }
--(id)initWithFrame:(CGRect)frame
+-(id)initWithFrame:(CGRect)frame flagStr:(NSString *)flagStr
 {
     if (self=[super initWithFrame:frame])
     {
+        [self createCalendarView];
         self.clipsToBounds=YES;
-        [self createCalenderView];
     }
     return self;
 }
@@ -233,11 +224,50 @@
     DEALLOC_PRINTF;
     [super dealloc];
 }
+-(void)setSelectDay:(int)selectDay
+{
+    if (selectDay>31||selectDay<1) {
+        return;
+    }
+    _selectDay=selectDay;
+    signed int index=-1;
+    signed int location=-1;
+    
+    for (int i=_selectDay>8?1:0; i<self.dayArr.count; i++)
+    {
+        NSArray *weeks=[self.dayArr objectAtIndex:i];
+        for (int j=0; j<weeks.count; j++)
+        {
+            int day=[[weeks objectAtIndex:j] intValue];
+            if (day==_selectDay)
+            {
+                index=i;
+                location=j;
+                goto endCircle;
+            }
+        }
+    }
+endCircle:
+    if (index!=-1&&location!=-1)
+    {
+        selectedIm.hidden=NO;
+        CGRect rect=selectedIm.frame;
+        rect.origin.y=index*30+20;
+        rect.origin.x=location*320/7.0;
+        selectedIm.frame=rect;
+        
+        if ([self.delegate respondsToSelector:@selector(calendarView:selectDay:)])
+        {
+            [self.delegate calendarView:self selectDay:_selectDay];
+        }
+    }
+}
 -(void)selectCalendarCell:(YJCalendarCell *)cell atLocation:(int)location
 {
     NSArray *week=[self.dayArr objectAtIndex:cell.index];
     NSString *day=[week objectAtIndex:location];
     
+    _selectDay=[day intValue];
     switch (cell.type) {
         case kCalendarCellTypeFirstWeek:
             if([day intValue]>8)
@@ -248,6 +278,7 @@
                     month=12;
                     year-=1;
                 }
+                
                 [self showYear:year month:month];
                 return;
             }
@@ -272,13 +303,16 @@
         default:
             break;
     }
+    
+    
     selectedIm.hidden=NO;
     CGRect rect=selectedIm.frame;
     rect.origin.y=cell.index*30+20;
     rect.origin.x=location*320/7.0;
     selectedIm.frame=rect;
-    if ([self.delegate respondsToSelector:@selector(calenderView:selectDay:)]) {
-        [self.delegate calenderView:self selectDay:[day intValue]];
+   
+    if ([self.delegate respondsToSelector:@selector(calendarView:selectDay:)]) {
+        [self.delegate calendarView:self selectDay:[day intValue]];
     }
     
 }
@@ -292,39 +326,9 @@
     if (cell.type==kCalendarCellTypeLastWeek&&[day intValue]<8) {
         return;
     }
-    NSArray *colors=@[[UIColor brownColor],[UIColor orangeColor],[UIColor greenColor],[UIColor blueColor],[UIColor purpleColor]];
-    int count=0;
-    if ([self.delegate respondsToSelector:@selector(calenderView:getDotCountForDay:)])
+    if([self.delegate respondsToSelector:@selector(calendarView:drawDayRectFinish:rect:ctx:)])
     {
-        count=[self.delegate calenderView:self getDotCountForDay:[day intValue]];
+        [self.delegate calendarView:self drawDayRectFinish:[day intValue] rect:rect ctx:ctx];
     }
-    count=count>5?5:count;
-    float arcWidth=4;
-    float span =4;
-    float beginX=(rect.size.width-span*(count-1)-arcWidth*count)/2;
-    for (int i=0; i<count; i++)
-    {
-        CGContextSaveGState(ctx);
-        [(UIColor *)[colors objectAtIndex:i] setFill];
-        CGContextAddEllipseInRect(ctx, CGRectMake(beginX+(arcWidth+span)*i+location*rect.size.width, rect.size.height-8, arcWidth, arcWidth));
-        CGContextDrawPath(ctx, kCGPathFill);
-        CGContextRestoreGState(ctx);
-    }
-}
--(int)numberForItemInCalendarTableView:(YJCalendarTableView*)calendarTabView
-{
-    return 30;
-}
--(YJCalendarTableItem *)calendarTableView:(YJCalendarTableView*)calendarTabView getItemWithIndex:(int)index
-{
-    YJCalendarTableItem *item=[calendarTabView getItemNoShowWithFlag:@"item_calendar"];
-    if (!item) {
-        item=[[[YJCalendarTableItem alloc] initWithFrame:CGRectMake(0, 0, 50, 50) flagStr:@"item_calendar"] autorelease];
-    }
-    return item;
-}
--(void)calendarTableView:(YJCalendarTableView*)calendarTabView willShowItemAtIndex:(int)index
-{
-    NSLog(@"%d",index);
 }
 @end

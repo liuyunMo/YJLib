@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B00811B183B3CAB000ADDFF /* TestYJCalenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B00811A183B3CAA000ADDFF /* TestYJCalenderViewController.m */; };
 		3B0B6B67180E328B00081484 /* TestYJTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0B6B65180E328B00081484 /* TestYJTestViewController.m */; };
 		3B0B6B68180E328B00081484 /* TestYJTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B0B6B66180E328B00081484 /* TestYJTestViewController.xib */; };
 		3B483316180BA9360013EFE8 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B483315180BA9360013EFE8 /* ListViewController.m */; };
@@ -298,6 +299,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B008119183B3CAA000ADDFF /* TestYJCalenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestYJCalenderViewController.h; path = Src/TestYJCalenderViewController.h; sourceTree = "<group>"; };
+		3B00811A183B3CAA000ADDFF /* TestYJCalenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestYJCalenderViewController.m; path = Src/TestYJCalenderViewController.m; sourceTree = "<group>"; };
 		3B0B6B64180E328B00081484 /* TestYJTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestYJTestViewController.h; path = Src/TestYJTestViewController.h; sourceTree = "<group>"; };
 		3B0B6B65180E328B00081484 /* TestYJTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestYJTestViewController.m; path = Src/TestYJTestViewController.m; sourceTree = "<group>"; };
 		3B0B6B66180E328B00081484 /* TestYJTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestYJTestViewController.xib; path = Src/TestYJTestViewController.xib; sourceTree = "<group>"; };
@@ -544,6 +547,8 @@
 				3B0B6B66180E328B00081484 /* TestYJTestViewController.xib */,
 				3BDC6F80182745C8006606BA /* TestYJTableViewViewController.h */,
 				3BDC6F81182745C8006606BA /* TestYJTableViewViewController.m */,
+				3B008119183B3CAA000ADDFF /* TestYJCalenderViewController.h */,
+				3B00811A183B3CAA000ADDFF /* TestYJCalenderViewController.m */,
 			);
 			name = Src;
 			sourceTree = "<group>";
@@ -1299,6 +1304,7 @@
 				3B483316180BA9360013EFE8 /* ListViewController.m in Sources */,
 				3B0B6B67180E328B00081484 /* TestYJTestViewController.m in Sources */,
 				3BDC6F82182745C8006606BA /* TestYJTableViewViewController.m in Sources */,
+				3B00811B183B3CAB000ADDFF /* TestYJCalenderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
