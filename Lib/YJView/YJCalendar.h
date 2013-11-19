@@ -24,9 +24,9 @@
 @protocol YJCalendarDelegate <NSObject>
 
 @optional
--(void)calendarView:(YJCalendar *)calenderView withChangeToHeight:(float)toHeight withTime:(float)time;
--(void)calendarView:(YJCalendar *)calenderView selectDay:(int)day;
--(void)calendarView:(YJCalendar *)calenderView drawDayRectFinish:(int)day rect:(CGRect)rect ctx:(CGContextRef)ctx;
--(void)calendarView:(YJCalendar *)calenderView changeToYearFinish:(int)year month:(int)month;
--(UIImage*)getSelectDayImage:(YJCalendar *)calenderView;
+-(void)calendarView:(YJCalendar *)calendarView withChangeToHeight:(float)toHeight withTime:(float)time;
+-(void)calendarView:(YJCalendar *)calendarView selectDay:(int)day;
+-(void)calendarView:(YJCalendar *)calendarView drawDayRectFinish:(int)day rect:(CGRect)rect ctx:(CGContextRef)ctx;
+-(void)calendarView:(YJCalendar *)calendarView changeToYearFinish:(int)year month:(int)month;
+-(UIImage*)getSelectDayImage:(YJCalendar *)calendarView;
 @end
