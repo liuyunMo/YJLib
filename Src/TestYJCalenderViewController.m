@@ -29,7 +29,7 @@
     calendar=[[YJCalendar alloc] initWithFrame:CGRectMake(0, 30, 320, 200) flagStr:@"calendar"];
     calendar.delegate=self;
     [calendar showYear:2013 month:10];
-    calendar.selectDay=30;
+    calendar.selectDay=1;
     [self.view addSubview:calendar];
     [calendar release];
     

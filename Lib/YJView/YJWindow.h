@@ -16,6 +16,9 @@
  2、展示readme
  3、状态栏提示（暂不支持）
  
+ version : 2013.11.19
+ 
+ 增加 info按钮处理事件的指定
  */
 
 #define YJLAYOUT_YJWINDOW_CRASH           @"crashRecord"
@@ -23,12 +26,14 @@
 
 #import "YJCrashRecorder.h"
 #import "YJNavBar.h"
+typedef void(^InfoButPreHandle)(void);
 @interface YJWindow : UIWindow<YJNavBarDelegate,YJFlagViewDelegate>
 {
     UIButton *infoBu;
     YJFlagView *infoView;
 }
 @property(nonatomic,assign)BOOL hiddenInfoButton;
+@property(nonatomic,copy)InfoButPreHandle handle;
 +(NSString *)getReadmeFilePath;
 -(void)setupWindow;
 -(void)resignCrashRecorder;

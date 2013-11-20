@@ -19,9 +19,14 @@
 {
     [YJCrashRecorder setDefaultCrashRecord];
 }
+-(void)setHandle:(InfoButPreHandle)handle
+{
+    SET_BLOCK(_handle, handle);
+}
 - (void)dealloc
 {
     DEALLOC_PRINTF;
+    SAFE_BLOCK_RELEASE(_handle);
     [_flagStr release];
     [super dealloc];
 }
@@ -52,6 +57,10 @@
 }
 -(void)showInfoView
 {
+    if (_handle) {
+        _handle();
+        return;
+    }
     float statusHeight=[UIApplication sharedApplication].statusBarFrame.size.height;
     infoBu.hidden=YES;
     if (!infoView)
