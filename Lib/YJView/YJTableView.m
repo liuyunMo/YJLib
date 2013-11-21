@@ -47,7 +47,7 @@
     if(!tab)
     {
         if (!proView) {
-            proView=[[LYRoundProgressView alloc] initWithloopDefaultColor:[UIColor grayColor] loopHighlightedColor:[UIColor blueColor] frame:CGRectMake(140, 5, 40, 40)];
+            proView=[[LYRoundProgressView alloc] initWithloopDefaultColor:[UIColor clearColor] loopHighlightedColor:[UIColor colorWithRed:0.276 green:0.551 blue:0.414 alpha:1.000] frame:CGRectMake(140, 5, 40, 40)];
             proView.backgroundColor=[UIColor clearColor];
             proView.loopWidth=3;
             proView.progress=0;
@@ -102,7 +102,7 @@
     [ac startAnimating];
     [self insertSubview:ac belowSubview:tab];
     [ac release];
-    [UIView animateWithDuration:.5 animations:^{
+    [UIView animateWithDuration:ANIMATION_TIME animations:^{
         tab.contentInset=UIEdgeInsetsMake(SPAN_TO_PULL_DOWN_REF,0.0f, 0.0f, 0.0f);
     }];
     
@@ -137,7 +137,7 @@
     [ac1 stopAnimating];
     
     
-    [UIView animateWithDuration:.5 animations:^{
+    [UIView animateWithDuration:ANIMATION_TIME animations:^{
         [tab setContentInset:UIEdgeInsetsMake(0.0f,0.0f, 0.0f, 0.0f)];
         [tab reloadData];
     } completion:^(BOOL finished) {
@@ -173,7 +173,7 @@
         [ac startAnimating];
         [self insertSubview:ac belowSubview:tab];
         [ac release];
-        [UIView animateWithDuration:.5 animations:^{
+        [UIView animateWithDuration:ANIMATION_TIME animations:^{
             tab.contentInset=UIEdgeInsetsMake(0.0f, 0.0f,SPAN_TO_PULL_DOWN_REF, 0.0f);
         }];
         

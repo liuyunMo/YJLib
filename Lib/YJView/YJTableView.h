@@ -7,12 +7,15 @@
 //
 /*
  
-   version :  2013.11.04
+   version :  2013.11.21
+ 
+  缩短动画时间
 
 */
 
-#import "YJView.h"
+#import "YJView.h" 
 #define SPAN_TO_PULL_DOWN_REF  80
+#define ANIMATION_TIME       .25
 @protocol YJTableViewDelegate;
 @protocol YJTableViewDataSource;
 @class YJTableView;

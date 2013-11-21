@@ -19,6 +19,7 @@
  version : 2013.11.19
  
  增加 info按钮处理事件的指定
+ 
  */
 
 #define YJLAYOUT_YJWINDOW_CRASH           @"crashRecord"

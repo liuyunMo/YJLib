@@ -73,7 +73,7 @@
 {
     _progress=value>self.minValue?(value>self.maxValue?self.maxValue:value):self.minValue;
     [proStr release];
-    proStr=[[NSString alloc] initWithFormat:@"%.1f%@",_progress*100,@"%"];
+    proStr=[[NSString alloc] initWithFormat:@"%d%@",(int)(_progress*100),@"%"];
     [self setNeedsDisplay];
 }
 #pragma mark--绘图操作
