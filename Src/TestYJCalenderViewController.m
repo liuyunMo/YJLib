@@ -33,11 +33,6 @@
     [self.view addSubview:calendar];
     [calendar release];
     
-    for (UIGestureRecognizer *ges in calendar.gestureRecognizers)
-    {
-        NSLog(@"%@",ges);
-    }
-    
     UIButton *bu=[UIButton buttonWithType:UIButtonTypeRoundedRect];
     [bu setTitle:@"刷新" forState:UIControlStateNormal];
     [bu addTarget:self action:@selector(refCalendar) forControlEvents:UIControlEventTouchUpInside];
@@ -58,7 +53,6 @@
 {
     NSArray *colors=@[[UIColor brownColor],[UIColor orangeColor],[UIColor greenColor],[UIColor blueColor],[UIColor purpleColor]];
     int count=arc4random()%6;
-    count=count>5?5:count;
     float arcWidth=4;
     float span =4;
     float beginX=(rect.size.width-span*(count-1)-arcWidth*count)/2;

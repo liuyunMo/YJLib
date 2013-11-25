@@ -238,8 +238,7 @@
                     calendarCell.frame=cellRect;
                 }
             }
-        } completion:^(BOOL finish)
-         {
+        } completion:^(BOOL finish){
              if (finish) {
                  
                  currentHeight=beginHeight+sizeHeight;
@@ -253,7 +252,7 @@
                          {
                              [calendarCell removeFromSuperview];
                          }
-                         if (calendarCell.frame.origin.x<0||calendarCell.frame.origin.x>320)
+                         if (calendarCell.frame.origin.x<0||calendarCell.frame.origin.x>=320)
                          {
                              [calendarCell removeFromSuperview];
                          }

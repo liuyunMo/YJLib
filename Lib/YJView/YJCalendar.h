@@ -20,7 +20,7 @@
 @property(nonatomic,readonly)int month;
 @property(nonatomic,assign)int selectDay;
 @property(nonatomic,assign)id<YJCalendarDelegate>delegate;
-@property(nonatomic,assign)BOOL resignDefautGes;//取消磨人手势,左右滑动切换月份
+@property(nonatomic,assign)BOOL resignDefautGes;//取消默认手势,左右滑动切换月份
 -(void)showYear:(int)year month:(int)month;//垂直方向动画
 -(void)gotoYear:(int)year month:(int)month animation:(BOOL)animation;//垂直方向动画
 -(void)reloadData;
