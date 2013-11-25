@@ -15,6 +15,7 @@
     float currentHeight;
     float beginHeight;
     UIImageView *selectedIm;
+    BOOL changeing;
 }
 @property(nonatomic,retain)NSMutableArray *dayArr;
 @end
@@ -34,190 +35,298 @@
 
 -(void)reloadData
 {
-    [selectedIm removeFromSuperview];
-    selectedIm=nil;
-    [self showYear:self.year month:self.month];
-    self.selectDay=_selectDay;
+    [self showYear:self.year month:self.month animation:NO];
 }
 -(void)showYear:(int)year month:(int)month
 {
-    _year=year;_month=month;
-    [selectedIm removeFromSuperview];
-    
-    float conBeginHeight=currentHeight-beginHeight;
-    float sizeHeight=0;
-    
-    if (self.dayArr) {
-        [self.dayArr removeAllObjects];
-    }else{
-        self.dayArr=[NSMutableArray array];
+    [self showYear:year month:month animation:YES];
+}
+-(void)showPreMonth
+{
+    int month=_month-1;
+    int year=_year;
+    if (month<1) {
+        month=12;
+        year-=1;
     }
-    int index=0;
-    NSDateFormatter *formatter=OBJ_CREATE(NSDateFormatter);
-    [formatter setDateFormat:@"yyyy-MM-dd HH:mm"];
-    [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Shanghai"]];
-    NSString *dateString=[NSString stringWithFormat:@"%d-%d-01 08:00",year,month];
-    NSDate *date=[formatter dateFromString:dateString];
     
-    
-    NSDateComponents *com=[[NSCalendar currentCalendar] components:kCFCalendarUnitWeekday fromDate:date];
-    int week=com.weekday;
-    int dayCount=31;
-    if (month==2) {
-        dayCount=(year%100!=0&&year%4==0)?29:28;
-    }else if (month==4||month==6||month==9||month==11){
-        dayCount=30;
+    [self showYear:year month:month];
+}
+-(void)showNextMonth
+{
+    int month=_month+1;
+    int year=_year;
+    if (month>12) {
+        month=1;
+        year+=1;
     }
-    [formatter setDateFormat:@"dd"];
-    NSString *lastDay=[formatter stringFromDate:[NSDate dateWithTimeInterval:-24*3600 sinceDate:date]];
-    
-    //first
-    NSMutableArray *firstWeek=[NSMutableArray arrayWithArray:@[@"0",@"0",@"0",@"0",@"0",@"0",@"0"]];
-    for (int i=0; i<week-1; i++) {
-        firstWeek[week-1-i-1]=[NSString stringWithFormat:@"%d",[lastDay intValue]-i];
+    [self showYear:year month:month];
+}
+-(void)gotoPreMonth
+{
+    int month=_month-1;
+    int year=_year;
+    if (month<1) {
+        month=12;
+        year-=1;
     }
-    int currentDay=1;
-    for (int i=week-1; i<7; i++)
+    currentHeight=beginHeight;
+    [self showYear:year month:month animation:YES offset:CGPointMake(-320,0)];
+}
+-(void)gotoNextMonth
+{
+    int month=_month+1;
+    int year=_year;
+    if (month>12) {
+        month=1;
+        year+=1;
+    }
+    currentHeight=beginHeight;
+    [self showYear:year month:month animation:YES offset:CGPointMake(320,0)];
+}
+-(void)showYear:(int)year month:(int)month animation:(BOOL)animation
+{
+    [self showYear:year month:month animation:animation offset:CGPointMake(0, 0)];
+}
+-(void)gotoYear:(int)year month:(int)month animation:(BOOL)animation
+{
+    currentHeight=beginHeight;
+    [self showYear:year month:month animation:animation offset:CGPointMake(320,0)];
+}
+-(void)showYear:(int)year month:(int)month animation:(BOOL)animation offset:(CGPoint)offset
+{
     {
-        firstWeek[i]=[NSString stringWithFormat:@"%d",currentDay];
-        currentDay++;
-    }
-    [self.dayArr addObject:firstWeek];
-    
-    YJCalendarCell *firstCell=[[YJCalendarCell alloc] initWithFrame:CGRectMake(0, currentHeight, self.frame.size.width, 30)];
-    firstCell.index=index;
-    firstCell.backgroundColor=[UIColor clearColor];
-    firstCell.type=kCalendarCellTypeFirstWeek;
-    firstCell.delegate=self;
-    firstCell.titils=firstWeek;
-    [self insertSubview:firstCell atIndex:0];
-    [firstCell release];
-    
-    currentHeight+=30;
-    sizeHeight+=30;
-    
-    do {
-        NSMutableArray *weeks=[NSMutableArray arrayWithCapacity:7];
-        [weeks addObject:[NSString stringWithFormat:@"%d",currentDay]];
-        for (int i=0; i<6; i++) {
-            [weeks addObject:[NSString stringWithFormat:@"%d",currentDay+i+1]];
+        if (changeing) {
+            return;
         }
-        [self.dayArr addObject:weeks];
+        _year=year;_month=month;
+        selectedIm.hidden=YES;
+        changeing=YES;
         
-        index++;
-        YJCalendarCell *cell=[[YJCalendarCell alloc] initWithFrame:CGRectMake(0, currentHeight, self.frame.size.width, 30)];
-        cell.index=index;
-        cell.backgroundColor=[UIColor clearColor];
-        cell.titils=weeks;
-        cell.delegate=self;
-        [self insertSubview:cell atIndex:0];
-        [cell release];
+        if ([self.delegate respondsToSelector:@selector(calendarView:willShowYear:month:)])
+        {
+            [self.delegate calendarView:self willShowYear:_year month:_month];
+        }
+        
+        float conBeginHeight=currentHeight-beginHeight+offset.y;
+        float conBeginX     =offset.x;
+        
+        float sizeHeight=0;
+        
+        if (self.dayArr) {
+            [self.dayArr removeAllObjects];
+        }else{
+            self.dayArr=[NSMutableArray array];
+        }
+        
+        NSDateFormatter *formatter=OBJ_CREATE(NSDateFormatter);
+        [formatter setDateFormat:@"yyyy-MM-dd HH:mm"];
+        [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Shanghai"]];
+        NSString *dateString=[NSString stringWithFormat:@"%d-%d-01 08:00",year,month];
+        NSDate *date=[formatter dateFromString:dateString];
+        
+        
+        NSDateComponents *com=[[NSCalendar currentCalendar] components:kCFCalendarUnitWeekday fromDate:date];
+        int week=com.weekday;
+        int dayCount=31;
+        if (month==2) {
+            dayCount=(year%100!=0&&year%4==0)?29:28;
+        }else if (month==4||month==6||month==9||month==11){
+            dayCount=30;
+        }
+        [formatter setDateFormat:@"dd"];
+        NSString *lastDay=[formatter stringFromDate:[NSDate dateWithTimeInterval:-24*3600 sinceDate:date]];
+        
+        //first
+        NSMutableArray *firstWeek=[NSMutableArray arrayWithArray:@[@"0",@"0",@"0",@"0",@"0",@"0",@"0"]];
+        for (int i=0; i<week-1; i++) {
+            firstWeek[week-1-i-1]=[NSString stringWithFormat:@"%d",[lastDay intValue]-i];
+        }
+        int currentDay=1;
+        for (int i=week-1; i<7; i++)
+        {
+            firstWeek[i]=[NSString stringWithFormat:@"%d",currentDay];
+            currentDay++;
+        }
+        [self.dayArr addObject:firstWeek];
+        
+        
+        
+        int index=0;
+        
+        YJCalendarCell *firstCell=[[YJCalendarCell alloc] initWithFrame:CGRectMake(conBeginX, currentHeight, self.frame.size.width, 30)];
+        firstCell.index=index;
+        firstCell.backgroundColor=[UIColor clearColor];
+        firstCell.type=kCalendarCellTypeFirstWeek;
+        firstCell.delegate=self;
+        firstCell.titils=firstWeek;
+        [self insertSubview:firstCell atIndex:0];
+        [firstCell release];
         
         currentHeight+=30;
         sizeHeight+=30;
         
-        currentDay+=7;
-    } while (currentDay<=dayCount-7);
-    
-    
-    //last
-    NSMutableArray *lastWeek=[NSMutableArray arrayWithCapacity:7];
-    for (int i=0; i<7; i++) {
-        if (currentDay>dayCount) {
-            currentDay=currentDay-dayCount;
-        }
-        [lastWeek addObject:[NSString stringWithFormat:@"%d",currentDay]];
-        currentDay++;
-    }
-    [self.dayArr addObject:lastWeek];
-    
-    index++;
-    YJCalendarCell *lastCell=[[YJCalendarCell alloc] initWithFrame:CGRectMake(0, currentHeight, self.frame.size.width, 30)];
-    lastCell.index=index;
-    lastCell.delegate=self;
-    lastCell.backgroundColor=[UIColor clearColor];
-    lastCell.titils=lastWeek;
-    lastCell.type=kCalendarCellTypeLastWeek;
-    [self insertSubview:lastCell atIndex:0];
-    [lastCell release];
-    
-    currentHeight+=30;
-    sizeHeight+=30;
-    
-    [formatter release];
-    
-    
-    
-    
-    if ([self.delegate respondsToSelector:@selector(calendarView:withChangeToHeight:withTime:)]) {
-        [self.delegate calendarView:self withChangeToHeight:sizeHeight+beginHeight withTime:.5];
-    }
-    
-    [UIView animateWithDuration:.5 animations:^{
-        CGRect rect =self.frame;
-        rect.size.height=sizeHeight+beginHeight;
-        self.frame=rect;
-        
-        for (YJCalendarCell *calendarCell in self.subviews)
-        {
-            if ([calendarCell isKindOfClass:[YJCalendarCell class]]&&calendarCell.index!=100)
-            {
-                CGRect cellRect=calendarCell.frame;
-                cellRect.origin.y-=conBeginHeight;
-                calendarCell.frame=cellRect;
+        do {
+            NSMutableArray *weeks=[NSMutableArray arrayWithCapacity:7];
+            [weeks addObject:[NSString stringWithFormat:@"%d",currentDay]];
+            for (int i=0; i<6; i++) {
+                [weeks addObject:[NSString stringWithFormat:@"%d",currentDay+i+1]];
             }
+            [self.dayArr addObject:weeks];
+            
+            index++;
+            YJCalendarCell *cell=[[YJCalendarCell alloc] initWithFrame:CGRectMake(conBeginX, currentHeight, self.frame.size.width, 30)];
+            cell.index=index;
+            cell.backgroundColor=[UIColor clearColor];
+            cell.titils=weeks;
+            cell.delegate=self;
+            [self insertSubview:cell atIndex:0];
+            [cell release];
+            
+            currentHeight+=30;
+            sizeHeight+=30;
+            
+            currentDay+=7;
+        } while (currentDay<=dayCount-7);
+        
+        
+        //last
+        NSMutableArray *lastWeek=[NSMutableArray arrayWithCapacity:7];
+        for (int i=0; i<7; i++) {
+            if (currentDay>dayCount) {
+                currentDay=currentDay-dayCount;
+            }
+            [lastWeek addObject:[NSString stringWithFormat:@"%d",currentDay]];
+            currentDay++;
         }
-    } completion:^(BOOL finish)
-     {
-         if (finish) {
-             
-             currentHeight=beginHeight+sizeHeight;
-             
-             
-             for (YJCalendarCell *calendarCell in self.subviews)
-             {
-                 if ([calendarCell isKindOfClass:[YJCalendarCell class]]&&calendarCell.index!=100)
+        [self.dayArr addObject:lastWeek];
+        
+        index++;
+        YJCalendarCell *lastCell=[[YJCalendarCell alloc] initWithFrame:CGRectMake(conBeginX, currentHeight, self.frame.size.width, 30)];
+        lastCell.index=index;
+        lastCell.delegate=self;
+        lastCell.backgroundColor=[UIColor clearColor];
+        lastCell.titils=lastWeek;
+        lastCell.type=kCalendarCellTypeLastWeek;
+        [self insertSubview:lastCell atIndex:0];
+        [lastCell release];
+        
+        currentHeight+=30;
+        sizeHeight+=30;
+        
+        [formatter release];
+        
+        
+        
+        
+        if ([self.delegate respondsToSelector:@selector(calendarView:willChangeToHeight:withTime:)]) {
+            [self.delegate calendarView:self willChangeToHeight:sizeHeight+beginHeight withTime:ANIMATION_TIME_CALENDAR*animation];
+        }
+        
+        [UIView animateWithDuration:ANIMATION_TIME_CALENDAR*animation animations:^{
+            CGRect rect =self.frame;
+            rect.size.height=sizeHeight+beginHeight;
+            self.frame=rect;
+            
+            for (YJCalendarCell *calendarCell in self.subviews)
+            {
+                if ([calendarCell isKindOfClass:[YJCalendarCell class]]&&calendarCell.index!=100)
+                {
+                    CGRect cellRect=calendarCell.frame;
+                    cellRect.origin.y-=conBeginHeight;
+                    cellRect.origin.x-=conBeginX;
+                    calendarCell.frame=cellRect;
+                }
+            }
+        } completion:^(BOOL finish)
+         {
+             if (finish) {
+                 
+                 currentHeight=beginHeight+sizeHeight;
+                 
+                 
+                 for (YJCalendarCell *calendarCell in self.subviews)
                  {
-                     if (calendarCell.frame.origin.y<beginHeight||calendarCell.frame.origin.y>=currentHeight)
+                     if ([calendarCell isKindOfClass:[YJCalendarCell class]]&&calendarCell.index!=100)
                      {
-                         [calendarCell removeFromSuperview];
+                         if (calendarCell.frame.origin.y<beginHeight||calendarCell.frame.origin.y>=currentHeight)
+                         {
+                             [calendarCell removeFromSuperview];
+                         }
+                         if (calendarCell.frame.origin.x<0||calendarCell.frame.origin.x>320)
+                         {
+                             [calendarCell removeFromSuperview];
+                         }
                      }
                  }
+                 
+                 
+                 if ([self.delegate respondsToSelector:@selector(calendarView:changeToYearFinish:month:)])
+                 {
+                     [self.delegate calendarView:self changeToYearFinish:_year month:_month];
+                 }
+                 
+                 if(!selectedIm){
+                     selectedIm=[[UIImageView alloc] initWithFrame:CGRectMake(0, 20, 320/7.0, 30)];
+                     UIImage *image=nil;
+                     if ([self.delegate respondsToSelector:@selector(getSelectDayImage:)]) {
+                         image=[self.delegate getSelectDayImage:self];
+                     }else{
+                         image=getNavBarItemDefaultBackgroupImage();
+                     }
+                     selectedIm.image=image;
+                     [self insertSubview:selectedIm atIndex:0];
+                     [selectedIm release];
+                 }
+                 [self sendSubviewToBack:selectedIm];
+                 self.selectDay=_selectDay;
+                 
+                 changeing=NO;
              }
              
              
-             if ([self.delegate respondsToSelector:@selector(calendarView:changeToYearFinish:month:)])
-             {
-                 [self.delegate calendarView:self changeToYearFinish:_year month:_month];
-             }
-             
-             selectedIm=[[UIImageView alloc] initWithFrame:CGRectMake(0, 20, 320/7.0, 30)];
-             selectedIm.hidden=YES;
-             UIImage *image=nil;
-             if ([self.delegate respondsToSelector:@selector(getSelectDayImage:)]) {
-                 image=[self.delegate getSelectDayImage:self];
-             }else{
-                 image=getNavBarItemDefaultBackgroupImage();
-             }
-             selectedIm.image=image;
-             [self insertSubview:selectedIm atIndex:0];
-             [selectedIm release];
-             
-             self.selectDay=_selectDay;
-         }
-         
-     
-     }];
+         }];
+        
+    }
     
 }
+
 -(id)initWithFrame:(CGRect)frame flagStr:(NSString *)flagStr
 {
     if (self=[super initWithFrame:frame])
     {
         [self createCalendarView];
+        [self addDefaultGestures];
         self.clipsToBounds=YES;
     }
     return self;
+}
+-(void)addDefaultGestures
+{
+    UISwipeGestureRecognizer *leftGes=[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(gotoNextMonth)];
+    leftGes.direction=UISwipeGestureRecognizerDirectionLeft;
+    UISwipeGestureRecognizer *rightGes=[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(gotoPreMonth)];
+    rightGes.direction=UISwipeGestureRecognizerDirectionRight;
+    [self addGestureRecognizer:leftGes];
+    [self addGestureRecognizer:rightGes];
+    [leftGes release];
+    [rightGes release];
+}
+-(void)setResignDefautGes:(BOOL)resignDefautGes
+{
+    if (resignDefautGes==_resignDefautGes) {
+        return;
+    }
+    if (resignDefautGes)
+    {
+        [self addDefaultGestures];
+        
+    }else{
+        for (UIGestureRecognizer *ges in self.gestureRecognizers)
+        {
+            [self removeGestureRecognizer:ges];
+        }
+    }
 }
 - (void)dealloc
 {
@@ -272,14 +381,7 @@ endCircle:
         case kCalendarCellTypeFirstWeek:
             if([day intValue]>8)
             {
-                int month=_month-1;
-                int year=_year;
-                if (month<1) {
-                    month=12;
-                    year-=1;
-                }
-                
-                [self showYear:year month:month];
+                [self showPreMonth];
                 return;
             }
             break;
@@ -289,14 +391,7 @@ endCircle:
         case kCalendarCellTypeLastWeek:
             if([day intValue]<8)
             {
-                int month=_month+1;
-                int year=_year;
-                if (month>12) {
-                    month=1;
-                    year+=1;
-                }
-                [self showYear:year month:month];
-                
+                [self showNextMonth];
                 return;
             }
             break;

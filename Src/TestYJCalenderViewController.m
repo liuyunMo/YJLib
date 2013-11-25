@@ -7,7 +7,7 @@
 //
 
 #import "TestYJCalenderViewController.h"
-
+#import "YJCalendar.h"
 @interface TestYJCalenderViewController ()<YJCalendarDelegate>
 {
     YJCalendar *calendar;
@@ -33,7 +33,10 @@
     [self.view addSubview:calendar];
     [calendar release];
     
-    
+    for (UIGestureRecognizer *ges in calendar.gestureRecognizers)
+    {
+        NSLog(@"%@",ges);
+    }
     
     UIButton *bu=[UIButton buttonWithType:UIButtonTypeRoundedRect];
     [bu setTitle:@"刷新" forState:UIControlStateNormal];
