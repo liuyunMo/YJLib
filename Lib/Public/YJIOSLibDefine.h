@@ -36,8 +36,9 @@
 #define DOCUMENTS_PATH     [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
 #define LIBRARY_PATH       [NSHomeDirectory() stringByAppendingPathComponent:@"Library"]
 #define CACHES_PATH        [LIBRARY_PATH stringByAppendingPathComponent:@"Caches"]
-#define LAYOUT_PATH        [CACHES_PATH stringByAppendingPathComponent:@"Layout_szfore"]
 #define IMAGE_CACHES_PATH  [CACHES_PATH stringByAppendingPathComponent:@"Image_szfore"]
+
+#define LAYOUT_PATH        [CACHES_PATH stringByAppendingPathComponent:@"Layout_szfore"]
 
 //颜色
 #define SAFE_COLOR(x)   ((x)>0.0f?((x)>255.0f?255.0f:(x)):0.0f)

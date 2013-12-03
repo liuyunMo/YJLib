@@ -46,6 +46,7 @@ typedef NSUInteger YJExamType;
 
 
 -(id)initWithQuestionArray:(NSArray *)questionArr;
+-(NSArray*)getQuestionIdArr;
 -(YJTestResult *)getResult;
 -(void)dissmissExamViewController:(BOOL)animation isUserExit:(BOOL)userExit;
 -(void)showQuestionAtIndex:(int)index;

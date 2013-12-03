@@ -89,7 +89,6 @@ id getSettingsBundleValueForId(NSString *idStr)
     id value=nil;
     for(NSDictionary *subDict in arr)
     {
-        NSLog(@"%@",subDict);
         NSString *key=[subDict objectForKey:@"Key"];
         if ([key isEqualToString:idStr])
         {
@@ -192,4 +191,13 @@ NSString *readFromFFPG(NSString *path)
     }else{
         return nil;
     }
+}
+UIImage *getScreenShot()
+{
+    UIGraphicsBeginImageContextWithOptions([[UIScreen mainScreen] bounds].size, NO, 0.0f);
+    CGContextRef context=UIGraphicsGetCurrentContext();
+    [KEY_WINDOW.layer renderInContext:context];
+    UIImage *image=UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
 }

@@ -9,5 +9,5 @@
 
 
 @interface YJNavViewController : UINavigationController
-@property(nonatomic,assign)BOOL allowMoveToPop;
+@property(nonatomic,assign)BOOL panActive;
 @end

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ListViewController.h"
+#import "YJNavViewController.h"
 @implementation AppDelegate
 
 - (void)dealloc
@@ -25,9 +26,11 @@
 }
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window=[YJWindow viewWithLayoutFileName:@"YJWindow"];
+    self.window.backgroundColor=[UIColor blackColor];
     ListViewController *list=OBJ_CREATE(ListViewController);
-    UINavigationController *nav=[[UINavigationController alloc] initWithRootViewController:list];
+    YJNavViewController *nav=[[YJNavViewController alloc] initWithRootViewController:list];
+    nav.panActive=YES;
     self.window.rootViewController=nav;
     [list release];
     [nav release];

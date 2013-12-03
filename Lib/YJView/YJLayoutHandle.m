@@ -9,7 +9,7 @@
 #import "YJLayoutHandle.h"
 CGSize getApplicationSize(void)
 {
-    return [[UIScreen mainScreen] applicationFrame].size;
+    return [[UIScreen mainScreen] bounds].size;
 }
 float getFrameValue(NSString *str,float max)
 {

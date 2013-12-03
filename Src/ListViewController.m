@@ -19,6 +19,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.view.backgroundColor=[UIColor whiteColor];
+    
     dataToShow=@[@"YJTest",@"YJTableView",@"YJCalender"];
     [dataToShow retain];
     

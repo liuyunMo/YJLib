@@ -48,7 +48,7 @@
 {
     YJExamViewController *exam=[[YJExamViewController alloc] initWithQuestionArray:[self getQuestions]];
     exam.delegate_exam=self;
-    exam.examType=kYJExamHistory;
+    exam.examType=kYJExamExam;
     exam.userAnswerDict=answerDict;
     if (exam) {
         [self presentModalViewController:exam animated:YES];

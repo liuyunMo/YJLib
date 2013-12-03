@@ -41,6 +41,10 @@
     }
     return self;
 }
+-(NSArray*)getQuestionIdArr
+{
+    return [questionHandle questionIdArray];
+}
 -(void)addGestureRecognizer
 {
     UISwipeGestureRecognizer *leftGes=[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(gotoNextQuestion)];
@@ -253,7 +257,8 @@
     
     if(!_disenableDefaultGes)[self addGestureRecognizer];
     
-    if (self.examType==kYJExamHistory) resultHandle.answerDict=[NSMutableDictionary dictionaryWithDictionary:self.userAnswerDict];
+    if (_userAnswerDict.count>0) resultHandle.answerDict=[NSMutableDictionary dictionaryWithDictionary:self.userAnswerDict];
+    
     answerView.showParseInstant=self.examType==kYJExamTest1;
     
     [self showCurrentQuestionAnimation:NO nextOrPre:YES];

@@ -23,6 +23,22 @@
 @end
 
 @implementation UIView (YJLayoutDelegate)
++(id)viewWithLayoutFileName:(NSString *)fileName
+{
+    if (!fileName) return nil;
+    
+    NSString *docPath=[LAYOUT_PATH stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.plist",fileName]];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:docPath]) {
+        return [self viewWithPlistFilePath:docPath];
+    }
+    NSString *bunPath=[[NSBundle mainBundle] pathForResource:fileName ofType:@"plist"];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:bunPath])
+    {
+        return [self viewWithPlistFilePath:bunPath];
+    }
+     
+    return nil;
+}
 +(id)viewWithPlistFilePath:(NSString *)filePath
 {
     do {
@@ -47,7 +63,6 @@
         NSString *frameStr=[dict objectForKey:YJLAYOUT_YJVIEW_FRAME];
         if (!frameStr) break;
         view.frame=getFrameFromLayoutWithFrameString(frameStr);
-        
         
         //backgrounColor
         NSString *backgroundColorStr=[dict objectForKey:YJLAYOUT_YJVIEW_BACKGROUND_COLOR];
@@ -85,3 +100,25 @@
 }
 @end
 
+@implementation UIView (ScreenShot)
+-(UIImage *)getScreenShot
+{
+    UIGraphicsBeginImageContextWithOptions([self bounds].size, NO, 0.0f);
+    CGContextRef context=UIGraphicsGetCurrentContext();
+    [self.layer renderInContext:context];
+    UIImage *image=UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+@end
+@implementation UIView (ges)
+-(void)removeGesWithGesClass:(Class)gesClass
+{
+    for (UIGestureRecognizer *ges in self.gestureRecognizers)
+    {
+        if ([ges isKindOfClass:gesClass]) {
+            [self removeGestureRecognizer:ges];
+        }
+    }
+}
+@end

@@ -10,9 +10,12 @@
 #define VALUE_TO_REMOVE 50
 @interface YJNavViewController ()
 {
-    CGPoint touchBegin;
+    CGPoint lastTouchPoint;
     UIImageView *lastScreenShotView;
+    UIImageView *currScreenShotView;
+    
     NSMutableArray *screenShotList;
+    UIPanGestureRecognizer *panGes;
 }
 @end
 
@@ -25,71 +28,130 @@
 }
 -(UIImage *)getScreenShot
 {
-    UIGraphicsBeginImageContext(self.view.bounds.size);
-    CGContextRef context=UIGraphicsGetCurrentContext();
-    [self.view.layer renderInContext:context];
-    UIImage *image=UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return image;
+    return getScreenShot();
 }
--(void)initToMovePop
+-(void)leftGesActive
 {
-    screenShotList=[[NSMutableArray alloc] init];
-    UIPanGestureRecognizer *pan=[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleWithPanGesture:)];
-    [self.view addGestureRecognizer:pan];
-    [pan release];
+    
 }
--(void)handleWithPanGesture:(UIPanGestureRecognizer*)pan
+-(void)rightGesActive
 {
+    [self popViewControllerAnimated:YES];
+}
+
+//pan ges handle
+-(void)setPanActive:(BOOL)panActive
+{
+    _panActive=panActive;
+    if (_panActive)
+    {
+        if (!panGes)
+        {
+            panGes=[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGesActive:)];
+            [self.view addGestureRecognizer:panGes];
+            [panGes release];
+        }
+        if (!screenShotList) {
+            screenShotList=OBJ_CREATE(NSMutableArray);
+        }
+    }else{
+        [self.view removeGestureRecognizer:panGes];
+        panGes=nil;
+    }
+}
+-(void)panGesActive:(UIPanGestureRecognizer *)pan
+{
+    CGPoint point=[pan velocityInView:self.view];
+    CGPoint touchPoint=[pan locationInView:self.view];
+    float width=self.view.bounds.size.width;
+    float height=self.view.bounds.size.height;
+    NSLog(@"%@",[NSValue valueWithCGPoint:touchPoint]);
+//    if (point.x>2000)
+//    {
+//        [self rightGesActive];
+//    }
+//    if (point.x<-2000) {
+//        [self leftGesActive];
+//    }
     switch (pan.state) {
         case UIGestureRecognizerStateBegan:
-        {
+            
+            
+            if (!currScreenShotView) {
+                currScreenShotView=[[UIImageView alloc] initWithFrame:self.view.bounds];
+                currScreenShotView.image=[self getScreenShot];
+                [self.view.superview addSubview:currScreenShotView];
+                [currScreenShotView release];
+            }
+            
             if (!lastScreenShotView) {
                 lastScreenShotView=[[UIImageView alloc] initWithFrame:self.view.bounds];
                 lastScreenShotView.image=[screenShotList lastObject];
-                [self.view.superview insertSubview:lastScreenShotView belowSubview:self.view];
+                [self.view.superview insertSubview:lastScreenShotView belowSubview:currScreenShotView];
                 [lastScreenShotView release];
             }
             lastScreenShotView.transform=CGAffineTransformMakeScale(.9, .9);
-            touchBegin=[pan locationInView:KEY_WINDOW];
-        }
+            lastScreenShotView.alpha=.5;
+            
+            self.view.hidden=YES;
+            lastTouchPoint=[pan locationInView:self.view];
             break;
         case UIGestureRecognizerStateEnded:
         {
-            CGPoint touchEnd=[pan locationInView:KEY_WINDOW];
-            if (touchEnd.x-touchBegin.x>VALUE_TO_REMOVE)
+            if (currScreenShotView.frame.origin.x>self.view.bounds.size.width/2)
             {
-                [UIView animateWithDuration:.3 animations:^{
+                [self popViewControllerAnimated:NO];
+                
+                [UIView animateWithDuration:.25 animations:^{
                     lastScreenShotView.transform=CGAffineTransformIdentity;
-                    CGRect rect=self.view.bounds;
-                    rect.origin.x=320;
-                    self.view.frame=rect;
-                } completion:^(BOOL finish){
-                    [self popToRootViewControllerAnimated:NO];
-                    CGRect frame = self.view.frame;
-                    frame.origin.x = 0;
-                    self.view.frame = frame;
+                    currScreenShotView.frame=CGRectMake(width, 0, width, height);
+                } completion:^(BOOL finished) {
+                    if (finished) {
+                        [currScreenShotView removeFromSuperview];
+                        [lastScreenShotView removeFromSuperview];
+                        currScreenShotView=nil;
+                        lastScreenShotView=nil;
+                        self.view.hidden=NO;
+                    }
+                }];
+                
+            }else{
+                [UIView animateWithDuration:.25 animations:^{
+                    lastScreenShotView.transform=CGAffineTransformMakeScale(.9, .9);
+                    currScreenShotView.frame=self.view.bounds;
+                } completion:^(BOOL finished) {
+                    if (finished) {
+                        [currScreenShotView removeFromSuperview];
+                        [lastScreenShotView removeFromSuperview];
+                        currScreenShotView=nil;
+                        lastScreenShotView=nil;
+                        self.view.hidden=NO;
+                    }
                 }];
             }
         }
             break;
+            
         default:
             break;
     }
-}
--(void)viewDidLoad
-{
-    [super viewDidLoad];
-    if (_allowMoveToPop) [self initToMovePop];
+    lastScreenShotView.transform=CGAffineTransformMakeScale(.9+touchPoint.x/(width*10), .9+touchPoint.x/(width*10));
+    lastScreenShotView.alpha=touchPoint.x/width;
+    
+    CGRect rect=currScreenShotView.frame;
+    rect.origin.x+=touchPoint.x-lastTouchPoint.x;
+    currScreenShotView.frame=rect;
+    
+    lastTouchPoint=touchPoint;
 }
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    if (_allowMoveToPop)[screenShotList addObject:[self getScreenShot]];
+    if (_panActive)[screenShotList addObject:[self getScreenShot]];
     [super pushViewController:viewController animated:YES];
 }
 -(UIViewController *)popViewControllerAnimated:(BOOL)animated
 {
-    if (_allowMoveToPop)[screenShotList removeLastObject];
+    if (_panActive)[screenShotList removeLastObject];
     return [super popViewControllerAnimated:YES];
 }
 @end

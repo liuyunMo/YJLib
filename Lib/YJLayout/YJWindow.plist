@@ -3,16 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>frame</key>
-	<string>0,20,320,-20</string>
+	<string>0,0,320,-0</string>
 	<key>tag</key>
 	<string>1</string>
 	<key>backgroundColor</key>
 	<string>0,0,0,0</string>
 	<key>hiddenInfoBut</key>
-	<true/>
+	<false/>
 	<key>class</key>
 	<string>YJWindow</string>
 	<key>crashRecord</key>
 	<true/>
+	<key>flag</key>
+	<string>YJWindow_layout</string>
 </dict>
 </plist>

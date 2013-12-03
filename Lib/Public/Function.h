@@ -35,3 +35,6 @@ BOOL shouldUseNet(void);
 
 BOOL writhToFFPG(NSString *content,NSString *path);
 NSString *readFromFFPG(NSString *path);
+
+
+UIImage *getScreenShot();

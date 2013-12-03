@@ -35,7 +35,14 @@
 @end
 //  2013-07-10;
 @interface UIView (YJLayoutDelegate)<YJLayoutDelegate>
++(id)viewWithLayoutFileName:(NSString *)fileName;
 +(id)viewWithPlistFilePath:(NSString *)filePath;
 +(id)viewWithLayoutDict:(NSDictionary *)dict;
 -(void)addSubViewFromLayoutArray:(NSArray*)plistPaths;
+@end
+@interface UIView (ScreenShot)
+-(UIImage*)getScreenShot;
+@end
+@interface UIView (ges)
+-(void)removeGesWithGesClass:(Class)gesClass;
 @end

@@ -19,7 +19,10 @@
 
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
+    self.view.backgroundColor=[UIColor whiteColor];
+    
     la=[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 30)];
     la.textColor=[UIColor redColor];
     la.textAlignment=UITextAlignmentCenter;
@@ -44,6 +47,15 @@
 {
     [calendar reloadData];
     la.text=[NSString stringWithFormat:@"%d-%d-%d",calendar.year,calendar.month,calendar.selectDay];
+    
+    UIImage *image=getScreenShot();
+    NSData *data=UIImageJPEGRepresentation(image, 1.0);
+    [data writeToFile:[DOCUMENTS_PATH stringByAppendingPathComponent:@"test.png"] atomically:YES];
+    
+    UIImage *image1=[self.view getScreenShot];
+    NSData *data1=UIImageJPEGRepresentation(image1, 1.0);
+    [data1 writeToFile:[DOCUMENTS_PATH stringByAppendingPathComponent:@"test1.png"] atomically:YES];
+    
 }
 -(void)calendarView:(YJCalendar *)calenderView selectDay:(int)day
 {
