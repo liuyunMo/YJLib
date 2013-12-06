@@ -39,12 +39,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor=[UIColor redColor];
+    
+    UIButton *bu=[UIButton buttonWithType:UIButtonTypeRoundedRect];
+    bu.frame=CGRectMake(100, 100, 100, 100);
+    [bu addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:bu];
 }
--(id)init
-{
-    return [self initWithNibName:NSStringFromClass([self class]) bundle:nil];
-}
--(IBAction)buttonPressed:(UIButton*)bu
+
+-(void)buttonPressed:(UIButton*)bu
 {
     YJExamViewController *exam=[[YJExamViewController alloc] initWithQuestionArray:[self getQuestions]];
     exam.delegate_exam=self;

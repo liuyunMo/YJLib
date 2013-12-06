@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface TestYJTestViewController : UIViewController
--(IBAction)buttonPressed:(UIButton*)bu;
+-(void)buttonPressed:(UIButton*)bu;
 @end
