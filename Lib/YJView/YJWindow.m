@@ -33,6 +33,7 @@
 -(void)setupWindow
 {
     [self setCrashRecorder];
+    self.frame=[[UIScreen mainScreen] bounds];
     //self.windowLevel=UIWindowLevelStatusBar+1;
     self.backgroundColor=[UIColor clearColor];
     if (!infoBu&&!self.hiddenInfoButton) {

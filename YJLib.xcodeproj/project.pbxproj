@@ -14,6 +14,10 @@
 		3B20EB1918431DAE00C28A81 /* YJCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B20EB1718431DAE00C28A81 /* YJCalendar.m */; };
 		3B20EB1A18431DAE00C28A81 /* YJCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B20EB1718431DAE00C28A81 /* YJCalendar.m */; };
 		3B483316180BA9360013EFE8 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B483315180BA9360013EFE8 /* ListViewController.m */; };
+		3B527F07184D7DE400BB313D /* YJTreeChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B527F05184D7DE400BB313D /* YJTreeChartView.h */; };
+		3B527F08184D7DE400BB313D /* YJTreeChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B527F06184D7DE400BB313D /* YJTreeChartView.m */; };
+		3B527F09184D7DE400BB313D /* YJTreeChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B527F06184D7DE400BB313D /* YJTreeChartView.m */; };
+		3B527F0C184D7E1400BB313D /* TestTreeChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B527F0B184D7E1400BB313D /* TestTreeChartViewController.m */; };
 		3BD1BD1B1829D61F00B553C9 /* option_btn_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BD1BD191829D61F00B553C9 /* option_btn_default.png */; };
 		3BD1BD1C1829D61F00B553C9 /* option_btn_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BD1BD1A1829D61F00B553C9 /* option_btn_selected.png */; };
 		3BDC6F82182745C8006606BA /* TestYJTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC6F81182745C8006606BA /* TestYJTableViewViewController.m */; };
@@ -308,6 +312,10 @@
 		3B20EB1718431DAE00C28A81 /* YJCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJCalendar.m; sourceTree = "<group>"; };
 		3B483314180BA9360013EFE8 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListViewController.h; path = Src/ListViewController.h; sourceTree = "<group>"; };
 		3B483315180BA9360013EFE8 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListViewController.m; path = Src/ListViewController.m; sourceTree = "<group>"; };
+		3B527F05184D7DE400BB313D /* YJTreeChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTreeChartView.h; sourceTree = "<group>"; };
+		3B527F06184D7DE400BB313D /* YJTreeChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTreeChartView.m; sourceTree = "<group>"; };
+		3B527F0A184D7E1400BB313D /* TestTreeChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestTreeChartViewController.h; path = Src/TestTreeChartViewController.h; sourceTree = "<group>"; };
+		3B527F0B184D7E1400BB313D /* TestTreeChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestTreeChartViewController.m; path = Src/TestTreeChartViewController.m; sourceTree = "<group>"; };
 		3BD1BD191829D61F00B553C9 /* option_btn_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = option_btn_default.png; sourceTree = "<group>"; };
 		3BD1BD1A1829D61F00B553C9 /* option_btn_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = option_btn_selected.png; sourceTree = "<group>"; };
 		3BDC6F80182745C8006606BA /* TestYJTableViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestYJTableViewViewController.h; path = Src/TestYJTableViewViewController.h; sourceTree = "<group>"; };
@@ -548,6 +556,8 @@
 				3BDC6F81182745C8006606BA /* TestYJTableViewViewController.m */,
 				3B008119183B3CAA000ADDFF /* TestYJCalenderViewController.h */,
 				3B00811A183B3CAA000ADDFF /* TestYJCalenderViewController.m */,
+				3B527F0A184D7E1400BB313D /* TestTreeChartViewController.h */,
+				3B527F0B184D7E1400BB313D /* TestTreeChartViewController.m */,
 			);
 			name = Src;
 			sourceTree = "<group>";
@@ -850,6 +860,8 @@
 				3BEED1C0180B9ACC00CABE47 /* YJViewDelegate.h */,
 				3BEED1C1180B9ACC00CABE47 /* YJWindow.h */,
 				3BEED1C2180B9ACC00CABE47 /* YJWindow.m */,
+				3B527F05184D7DE400BB313D /* YJTreeChartView.h */,
+				3B527F06184D7DE400BB313D /* YJTreeChartView.m */,
 			);
 			name = YJView;
 			path = Lib/YJView;
@@ -1031,6 +1043,7 @@
 				3BEED2C3180B9ACD00CABE47 /* YJWindow.h in Headers */,
 				3BEED1F0180B9ACC00CABE47 /* YJDataCenter.h in Headers */,
 				3B20EB1818431DAE00C28A81 /* YJCalendar.h in Headers */,
+				3B527F07184D7DE400BB313D /* YJTreeChartView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1206,6 +1219,7 @@
 				3BEED2C1180B9ACD00CABE47 /* YJViewController.m in Sources */,
 				3BEED2C5180B9ACD00CABE47 /* YJWindow.m in Sources */,
 				3B20EB1A18431DAE00C28A81 /* YJCalendar.m in Sources */,
+				3B527F09184D7DE400BB313D /* YJTreeChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1303,6 +1317,8 @@
 				3BDC6F82182745C8006606BA /* TestYJTableViewViewController.m in Sources */,
 				3B00811B183B3CAB000ADDFF /* TestYJCalenderViewController.m in Sources */,
 				3B20EB1918431DAE00C28A81 /* YJCalendar.m in Sources */,
+				3B527F08184D7DE400BB313D /* YJTreeChartView.m in Sources */,
+				3B527F0C184D7E1400BB313D /* TestTreeChartViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1355,7 +1371,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Foresight Management Consulting Co.,Ltd";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shenzhen Foresight Management Consulting Co.,Ltd";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1370,6 +1387,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "74B8A7B6-536E-4684-BB34-9B6F130ACC3B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "74B8A7B6-536E-4684-BB34-9B6F130ACC3B";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1385,7 +1404,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Foresight Management Consulting Co.,Ltd";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shenzhen Foresight Management Consulting Co.,Ltd";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -1393,6 +1413,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "74B8A7B6-536E-4684-BB34-9B6F130ACC3B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "74B8A7B6-536E-4684-BB34-9B6F130ACC3B";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1401,11 +1423,16 @@
 		3BF236761809244800B311FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Foresight Management Consulting Co.,Ltd";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shenzhen Foresight Management Consulting Co.,Ltd";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YJLib/YJLib-Prefix.pch";
 				INFOPLIST_FILE = "YJLib/YJLib-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "74B8A7B6-536E-4684-BB34-9B6F130ACC3B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "74B8A7B6-536E-4684-BB34-9B6F130ACC3B";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1413,11 +1440,16 @@
 		3BF236771809244800B311FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Foresight Management Consulting Co.,Ltd";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shenzhen Foresight Management Consulting Co.,Ltd";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YJLib/YJLib-Prefix.pch";
 				INFOPLIST_FILE = "YJLib/YJLib-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "74B8A7B6-536E-4684-BB34-9B6F130ACC3B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "74B8A7B6-536E-4684-BB34-9B6F130ACC3B";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

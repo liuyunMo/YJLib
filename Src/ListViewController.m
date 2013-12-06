@@ -22,7 +22,7 @@
     
     self.view.backgroundColor=[UIColor whiteColor];
     
-    dataToShow=@[@"YJTest",@"YJTableView",@"YJCalender"];
+    dataToShow=@[@"YJTest",@"YJTableView",@"YJCalender",@"TreeChart"];
     [dataToShow retain];
     
     UITableView *tab=[[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];

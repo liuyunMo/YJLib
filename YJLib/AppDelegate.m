@@ -27,10 +27,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window=[YJWindow viewWithLayoutFileName:@"YJWindow"];
-    self.window.backgroundColor=[UIColor blackColor];
+    
     ListViewController *list=OBJ_CREATE(ListViewController);
     YJNavViewController *nav=[[YJNavViewController alloc] initWithRootViewController:list];
-    nav.panActive=YES;
+   // nav.panActive=YES;
     self.window.rootViewController=nav;
     [list release];
     [nav release];
