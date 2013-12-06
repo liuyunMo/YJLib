@@ -287,6 +287,10 @@
 		3BF2366E1809244800B311FE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BF2366D1809244800B311FE /* Default.png */; };
 		3BF236701809244800B311FE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BF2366F1809244800B311FE /* Default@2x.png */; };
 		3BF236721809244800B311FE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BF236711809244800B311FE /* Default-568h@2x.png */; };
+		3BF70AC71851A9AD0080869B /* YJStarChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BF70AC51851A9AD0080869B /* YJStarChartView.h */; };
+		3BF70AC81851A9AD0080869B /* YJStarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF70AC61851A9AD0080869B /* YJStarChartView.m */; };
+		3BF70AC91851A9AD0080869B /* YJStarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF70AC61851A9AD0080869B /* YJStarChartView.m */; };
+		3BF70ACC1851A9E30080869B /* TestStarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF70ACB1851A9E30080869B /* TestStarChartViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -508,6 +512,10 @@
 		3BF2366D1809244800B311FE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3BF2366F1809244800B311FE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3BF236711809244800B311FE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3BF70AC51851A9AD0080869B /* YJStarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJStarChartView.h; sourceTree = "<group>"; };
+		3BF70AC61851A9AD0080869B /* YJStarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJStarChartView.m; sourceTree = "<group>"; };
+		3BF70ACA1851A9E30080869B /* TestStarChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestStarChartViewController.h; path = Src/TestStarChartViewController.h; sourceTree = "<group>"; };
+		3BF70ACB1851A9E30080869B /* TestStarChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestStarChartViewController.m; path = Src/TestStarChartViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -555,6 +563,8 @@
 				3B00811A183B3CAA000ADDFF /* TestYJCalenderViewController.m */,
 				3B527F0A184D7E1400BB313D /* TestTreeChartViewController.h */,
 				3B527F0B184D7E1400BB313D /* TestTreeChartViewController.m */,
+				3BF70ACA1851A9E30080869B /* TestStarChartViewController.h */,
+				3BF70ACB1851A9E30080869B /* TestStarChartViewController.m */,
 			);
 			name = Src;
 			sourceTree = "<group>";
@@ -859,6 +869,8 @@
 				3BEED1C2180B9ACC00CABE47 /* YJWindow.m */,
 				3B527F05184D7DE400BB313D /* YJTreeChartView.h */,
 				3B527F06184D7DE400BB313D /* YJTreeChartView.m */,
+				3BF70AC51851A9AD0080869B /* YJStarChartView.h */,
+				3BF70AC61851A9AD0080869B /* YJStarChartView.m */,
 			);
 			name = YJView;
 			path = Lib/YJView;
@@ -1041,6 +1053,7 @@
 				3BEED1F0180B9ACC00CABE47 /* YJDataCenter.h in Headers */,
 				3B20EB1818431DAE00C28A81 /* YJCalendar.h in Headers */,
 				3B527F07184D7DE400BB313D /* YJTreeChartView.h in Headers */,
+				3BF70AC71851A9AD0080869B /* YJStarChartView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1216,6 +1229,7 @@
 				3BEED2C5180B9ACD00CABE47 /* YJWindow.m in Sources */,
 				3B20EB1A18431DAE00C28A81 /* YJCalendar.m in Sources */,
 				3B527F09184D7DE400BB313D /* YJTreeChartView.m in Sources */,
+				3BF70AC91851A9AD0080869B /* YJStarChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1315,6 +1329,8 @@
 				3B20EB1918431DAE00C28A81 /* YJCalendar.m in Sources */,
 				3B527F08184D7DE400BB313D /* YJTreeChartView.m in Sources */,
 				3B527F0C184D7E1400BB313D /* TestTreeChartViewController.m in Sources */,
+				3BF70AC81851A9AD0080869B /* YJStarChartView.m in Sources */,
+				3BF70ACC1851A9E30080869B /* TestStarChartViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

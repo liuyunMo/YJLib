@@ -1205,6 +1205,13 @@ zhongyy
 
 597
 
+YJStarChartView.h
+file
+0
+
+
+add
+
 YJQuartz2DFunction.m
 file
 
@@ -1274,6 +1281,13 @@ zhongyy
 611
 
 YJMainViewController.m
+file
+0
+
+
+add
+
+YJStarChartView.m
 file
 0
 
@@ -1668,40 +1682,6 @@ zhongyy
 
 255
 
-QDAlertView.h
-file
-
-
-
-
-2013-06-04T02:15:03.000000Z
-450d98079cf2da67c86ee5654b346a4a
-2013-06-04T02:21:36.899473Z
-45
-zhongyy
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1891
-
 YJMainView.m
 file
 
@@ -1735,6 +1715,40 @@ zhongyy
 
 
 451
+
+QDAlertView.h
+file
+
+
+
+
+2013-06-04T02:15:03.000000Z
+450d98079cf2da67c86ee5654b346a4a
+2013-06-04T02:21:36.899473Z
+45
+zhongyy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1891
 
 YJSegmentControl.mm
 file
