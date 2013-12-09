@@ -99,8 +99,8 @@
         
         
         YJTreeNode *node=[[YJTreeNode alloc] init];
-        node.nodeId=getCurrentTimeSince1970();
-        node.nodeName=[NSString stringWithFormat:@"%f 平级",getCurrentTimeSince1970()];
+        node.nodeId=[view nodeArr].count+100;
+        node.nodeName=[NSString stringWithFormat:@"%d 平级",node.nodeId];
         node.floorIndex=self.selectedNode.floorIndex;
         node.subNodeIds=nil;
         
@@ -121,8 +121,8 @@
     {
         NSMutableArray *subNode=[NSMutableArray arrayWithArray:self.selectedNode.subNodeIds];
         YJTreeNode *node=[[YJTreeNode alloc] init];
-        node.nodeId=getCurrentTimeSince1970();
-        node.nodeName=[NSString stringWithFormat:@"%f 增加的",getCurrentTimeSince1970()];
+        node.nodeId=[view nodeArr].count+100;
+        node.nodeName=[NSString stringWithFormat:@"%d 增加的",node.nodeId];
         node.floorIndex=self.selectedNode.floorIndex+1;
         [subNode addObject:@(node.nodeId)];
         self.selectedNode.subNodeIds=subNode;
@@ -186,6 +186,11 @@
     [[UIColor whiteColor] setFill];
     [str drawInRect:rect withFont:[UIFont systemFontOfSize:13] lineBreakMode:NSLineBreakByTruncatingMiddle alignment:NSTextAlignmentCenter];
     CGContextRestoreGState(ctx);
+    
+//    CGContextSaveGState(ctx);
+//    CGGradientRef gradient=createGradientWithColors(@[(id)[[UIColor redColor] CGColor],(id)[[UIColor greenColor]CGColor]], @[@(.3),@(.7)]);
+//    CGContextDrawLinearGradient(ctx, gradient, CGPointMake(node.rect.origin.x+node.rect.size.width/2, node.rect.origin.y), CGPointMake(node.rect.origin.x+node.rect.size.width/2,node.rect.origin.y+node.rect.size.height), 0);
+//    CGContextRestoreGState(ctx);
 }
 -(void)view:(YJTreeChartView *)chartView selectNode:(YJTreeNode *)node
 {

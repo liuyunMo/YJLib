@@ -59,6 +59,10 @@
 @property(nonatomic,copy)NSString *rootNodeName;
 @end
 @implementation YJTreeChartView
+-(NSArray *)nodeArr
+{
+    return dataArr;
+}
 -(void)addNode:(YJTreeNode*)node
 {
     [dataArr addObject:node];
