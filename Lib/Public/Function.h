@@ -38,3 +38,7 @@ NSString *readFromFFPG(NSString *path);
 
 
 UIImage *getScreenShot();
+
+typedef void*(^iterBlock)();
+typedef void(^iterHandleBlock)(id item);
+void iterArray(NSArray *arr,iterHandleBlock handle);

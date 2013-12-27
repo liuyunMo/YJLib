@@ -166,6 +166,8 @@ int CHECK_NET_RESULT= CHECK_DATA(dict)  \
 //typedef void (^backBlock)(id context,NSDictionary *userInfo);
 typedef void(^YJResBlock)(id ctx,id result);
 typedef YJResBlock backBlock;//兼容以前～～
+
+
 //other
 typedef unsigned char YJStatus;
 #define YJStatusOK    1

@@ -201,3 +201,30 @@ UIImage *getScreenShot()
     UIGraphicsEndImageContext();
     return image;
 }
+
+
+iterBlock createIter(NSArray *arr)
+{
+    __block int i=-1;
+    iterBlock iter=^{
+        i++;
+        if (i==arr.count) {
+            return nil;
+        }
+        return (void *)[arr objectAtIndex:i];
+    };
+    return Block_copy(iter);
+}
+void iterArray(NSArray *arr,iterHandleBlock handle)
+{
+    iterBlock iter=createIter(arr);
+    while (1) {
+        id item=iter();
+        if (item) {
+            handle(item);
+        }else{
+            break;
+        }
+    }
+    Block_release(iter);
+}
