@@ -207,4 +207,24 @@ enum
     kTouchEventEnded
 };
 typedef NSInteger YJTouchEvent;
+
+
+//arc
+
+#ifdef USE_ARC
+
+#define YJ_RETAIN(p)
+#define YJ_RELEASE(p)
+#define YJ_AUTORELEASE(p) p
+#define YJ_SUPER_DEALLOC
+
+#else
+
+#define YJ_RETAIN(p)       [p retain]
+#define YJ_RELEASE(p)      [p release]
+#define YJ_AUTORELEASE(p)  [p autorelease]
+#define YJ_SUPER_DEALLOC   [super dealloc]
+#endif
+
+
 #endif
