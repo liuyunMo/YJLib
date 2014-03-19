@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>319DCE2D-A9AD-4EC1-BEF8-2F9D8340F469</string>
+	<key>IDESourceControlProjectName</key>
+	<string>YJLib</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D25EB07E-8C1A-4299-A9A9-79084C364637</key>
+		<string>https://github.com/liuyunMo/YJLib.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>YJLib.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D25EB07E-8C1A-4299-A9A9-79084C364637</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/liuyunMo/YJLib.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D25EB07E-8C1A-4299-A9A9-79084C364637</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D25EB07E-8C1A-4299-A9A9-79084C364637</string>
+			<key>IDESourceControlWCCName</key>
+			<string>YJLib</string>
+		</dict>
+	</array>
+</dict>
+</plist>

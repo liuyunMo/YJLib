@@ -1383,8 +1383,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Foresight Management Consulting Co.,Ltd";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shenzhen Foresight Management Consulting Co.,Ltd";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yuan Yuxin (47HDCFMWNF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yuan Yuxin (47HDCFMWNF)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1416,8 +1416,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Foresight Management Consulting Co.,Ltd";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shenzhen Foresight Management Consulting Co.,Ltd";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yuan Yuxin (47HDCFMWNF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yuan Yuxin (47HDCFMWNF)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -1435,8 +1435,8 @@
 		3BF236761809244800B311FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Foresight Management Consulting Co.,Ltd";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shenzhen Foresight Management Consulting Co.,Ltd";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yuan Yuxin (47HDCFMWNF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yuan Yuxin (47HDCFMWNF)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YJLib/YJLib-Prefix.pch";
 				INFOPLIST_FILE = "YJLib/YJLib-Info.plist";
@@ -1452,8 +1452,8 @@
 		3BF236771809244800B311FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Foresight Management Consulting Co.,Ltd";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shenzhen Foresight Management Consulting Co.,Ltd";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yuan Yuxin (47HDCFMWNF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yuan Yuxin (47HDCFMWNF)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YJLib/YJLib-Prefix.pch";
 				INFOPLIST_FILE = "YJLib/YJLib-Info.plist";
